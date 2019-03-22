@@ -74,15 +74,14 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SDL_SDK)/include;$(SDL_MIXER)/include;$(SDL_TTF)/include;$(SDL_IMAGE)/include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Json\;$(SDL_SDK)/include;$(SDL_MIXER)/include;$(SDL_TTF)/include;$(SDL_IMAGE)/include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SDL_SDK)/lib/x86/;$(SDL_MIXER)/lib/x86/;$(SDL_TTF)/lib/x86/;$(SDL_IMAGE)/lib/x86/;</AdditionalLibraryDirectories>
       <SubSystem>Console</SubSystem>
     </Link>
     <PostBuildEvent>
-      <Command>
-      </Command>
+      <Command>xcopy /E /Y "$(SolutionDir)\dlls\*.dll" "$(OutDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -125,9 +124,15 @@
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Resource Manager\ImageResource.cpp" />
+    <ClCompile Include="Resource Manager\ResourceManager.cpp" />
+    <ClCompile Include="Resource Manager\SoundResource.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Resource Manager\ImageResource.h" />
+    <ClInclude Include="Resource Manager\ResourceManager.h" />
+    <ClInclude Include="Resource Manager\SoundResource.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

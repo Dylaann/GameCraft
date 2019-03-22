@@ -1,10 +1,7 @@
 #pragma once
 #include "Scene.h"
-<<<<<<< HEAD
 #include "Grid\Grid.h"
-=======
 #include "Brick.h"
->>>>>>> master
 #include "AudioComponent.h"
 #include "BrickGen.h"
 #include <vector>

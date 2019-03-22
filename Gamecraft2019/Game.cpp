@@ -83,6 +83,22 @@ void Game::processEvents()
 		case SDL_KEYDOWN:
 			if (event.key.keysym.sym == SDLK_ESCAPE)
 				m_exitGame = true;
+
+			if (event.key.keysym.sym == SDLK_UP)
+				std::cout << "UP PRESSED" << std::endl;
+
+			if (event.key.keysym.sym == SDLK_DOWN)
+				std::cout << "DOWN PRESSED" << std::endl;
+
+			if (event.key.keysym.sym == SDLK_LEFT)
+				std::cout << "LEFT PRESSED" << std::endl;
+
+			if (event.key.keysym.sym == SDLK_RIGHT)
+				std::cout << "RIGHT PRESSED" << std::endl;
+				
+			if (event.key.keysym.sym == SDLK_SPACE)
+				std::cout << "SPACE PRESSED" << std::endl;
+
 			break;
 		default:
 			break;

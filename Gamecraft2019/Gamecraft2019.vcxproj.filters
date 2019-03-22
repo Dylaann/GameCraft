@@ -21,6 +21,12 @@
     <ClCompile Include="Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+<<<<<<< HEAD
+    <ClCompile Include="InputHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+=======
     <ClCompile Include="Resource Manager\ResourceManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -34,6 +40,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GameScene.cpp">
+>>>>>>> df08fc7447cc1485343713c42537b63d17c8c6e9
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,6 +48,12 @@
     <ClInclude Include="Game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+<<<<<<< HEAD
+    <ClInclude Include="InputHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+=======
     <ClInclude Include="Resource Manager\ResourceManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -60,6 +73,7 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Scene.h">
+>>>>>>> df08fc7447cc1485343713c42537b63d17c8c6e9
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

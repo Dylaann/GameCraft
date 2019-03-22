@@ -23,7 +23,7 @@ public:
 	bool changeScene() { return m_cs; }
 	std::string getNewScene() { return m_stgt; }
 	void resetSceneChange() { m_cs = false; }
-	void setResourceHandler(ResourceManager& resources) { m_resources = &resources; }
+	void setResourceHandler(ResourceManager * resources) { m_resources = resources; }
 	ResourceManager& resources() { return *m_resources; }
 	std::string getStgt() { return m_stgt; }
 	AudioComponent& audio() { return m_audio; }

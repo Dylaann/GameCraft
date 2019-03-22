@@ -1,4 +1,0 @@
-﻿  Game.cpp
-c:\users\student\desktop\gamecraft\gamecraft2019\game.cpp(47): warning C5030: attribute 'maybe_unused' is not recognized
-  Gamecraft2019.vcxproj -> C:\Users\student\Desktop\GameCraft\Gamecraft2019\Debug\Gamecraft2019.exe
-  Gamecraft2019.vcxproj -> C:\Users\student\Desktop\GameCraft\Gamecraft2019\Debug\Gamecraft2019.pdb (Partial PDB)

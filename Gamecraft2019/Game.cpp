@@ -20,7 +20,7 @@ Game::Game()
 		cout << "Error: " << "Audio Initalisation" << endl;
 	}
 
-	p_window = SDL_CreateWindow("Argo Project", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, m_windowWidth, m_windowHeight, 0);
+	p_window = SDL_CreateWindow("Game Craft", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, m_windowWidth, m_windowHeight, 0);
 	m_renderer = SDL_CreateRenderer(p_window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 
 
@@ -28,6 +28,13 @@ Game::Game()
 	{
 		std::cout << "Error: Could not create window" << std::endl;
 	}
+
+	// Wait until we have assets
+	//m_resourceManager = new ResourceManager(m_renderer);
+
+	//while (!m_resourceManager->checkLoaded()) {
+		//cout << "Loading..." << endl;
+	//}
 
 	setUpFont();
 
@@ -131,6 +138,6 @@ void Game::setUpFont() {
 	{
 		std::cout << "Error initialising font" << std::endl;
 	}
-	const char *path = "ASSETS\\FONTS\\TheBlackFestival.ttf";
-	Sans = TTF_OpenFont(path, 50);
+	const char *path = "ASSETS\\FONTS\\arial.ttf";
+	Arial = TTF_OpenFont(path, 50);
 }

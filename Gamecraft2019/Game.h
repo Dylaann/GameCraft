@@ -6,9 +6,7 @@
 #include <SDL_ttf.h>
 #include <SDL_image.h>
 #include <SDL_mixer.h>
-#include <stdlib.h>
-#include <time.h>
-#include <functional>
+#include "Resource Manager\ResourceManager.h"
 
 using namespace std;
 
@@ -35,6 +33,8 @@ private:
 	int m_windowHeight = 667;
 	bool m_exitGame = false;
 
-	TTF_Font* Sans;
+	TTF_Font* Arial;
+
+	ResourceManager * m_resourceManager;
 };
 #endif // !GAME_H

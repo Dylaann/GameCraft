@@ -1,5 +1,25 @@
-﻿  Game.cpp
-c:\users\student\desktop\gamecraft\gamecraft2019\game.cpp(54): warning C5030: attribute 'maybe_unused' is not recognized
+﻿  Tile.cpp
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\utility(175): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  c:\users\student\desktop\gamecraft\gamecraft2019\grid\tile.cpp(5): note: see reference to function template instantiation 'std::pair<float,float>::pair<int&,int&,void,0>(_Other1,_Other2) noexcept' being compiled
+          with
+          [
+              _Other1=int &,
+              _Other2=int &
+          ]
+  c:\users\student\desktop\gamecraft\gamecraft2019\grid\tile.cpp(3): note: see reference to function template instantiation 'std::pair<float,float>::pair<int&,int&,void,0>(_Other1,_Other2) noexcept' being compiled
+          with
+          [
+              _Other1=int &,
+              _Other2=int &
+          ]
+  Generating Code...
+  Compiling...
+  main.cpp
+  Game.cpp
+c:\users\student\desktop\gamecraft\gamecraft2019\game.cpp(43): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+c:\users\student\desktop\gamecraft\gamecraft2019\game.cpp(43): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\student\desktop\gamecraft\gamecraft2019\game.cpp(61): warning C5030: attribute 'maybe_unused' is not recognized
+  Generating Code...
   Gamecraft2019.vcxproj -> C:\Users\student\Desktop\GameCraft\Gamecraft2019\Debug\Gamecraft2019.exe
   Gamecraft2019.vcxproj -> C:\Users\student\Desktop\GameCraft\Gamecraft2019\Debug\Gamecraft2019.pdb (Partial PDB)
   C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\libFLAC-8.dll

@@ -7,10 +7,16 @@
 #include <SDL_image.h>
 #include <SDL_mixer.h>
 #include "Resource Manager\ResourceManager.h"
+#include "Grid\Tile.h"
+#include <vector>
 
 using namespace std;
 
-const int FRAMES_PER_SECOND = 60;
+const float FRAMES_PER_SECOND = 60;
+const float MAP_WIDTH = 10;
+const float MAP_HEIGHT = 20;
+const float TILE_WIDTH = 38;
+const float TILE_HEIGHT = 33;
 
 class Game
 {
@@ -36,5 +42,7 @@ private:
 	TTF_Font* Arial;
 
 	ResourceManager * m_resourceManager;
+
+	std::vector<Tile*> m_tiles;
 };
 #endif // !GAME_H

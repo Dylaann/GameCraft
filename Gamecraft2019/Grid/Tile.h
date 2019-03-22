@@ -4,6 +4,7 @@
 #include <SDL.h>
 #include <iostream>
 #include <list>
+#include <string.h>
 #include "..//Resource Manager/ResourceManager.h"
 
 class Tile
@@ -11,8 +12,8 @@ class Tile
 public:
 	enum TileState {
 		Empty,
-		Current,
-		Old
+		CurrentTile,
+		OldTile
 	};
 
 	Tile(int x, int y, int w, int h, ResourceManager * manager);
@@ -21,6 +22,9 @@ public:
 	void render(SDL_Renderer *renderer);
 	std::pair<float, float> getPos() { return m_position; }
 	TileState getState() { return m_currentState; }
+	void setState(std::string newState);
+
+	std::pair<float, float> m_id;
 private:
 	SDL_Surface * surface;
 	SDL_Rect m_drawRect;
@@ -29,7 +33,7 @@ private:
 	std::pair<float, float> m_position;
 	std::pair<float, float> m_rect;
 
-	TileState m_currentState = Current;
+	TileState m_currentState = OldTile;
 
 	ResourceManager * myManager;
 };

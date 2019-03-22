@@ -1,7 +1,6 @@
-﻿  main.cpp
-  Game.cpp
-c:\users\student\desktop\gamecraft\gamecraft2019\game.cpp(58): warning C5030: attribute 'maybe_unused' is not recognized
-  Generating Code...
+﻿  Grid.cpp
+c:\users\student\desktop\gamecraft\gamecraft2019\grid\grid.cpp(7): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+c:\users\student\desktop\gamecraft\gamecraft2019\grid\grid.cpp(7): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   Gamecraft2019.vcxproj -> C:\Users\student\Desktop\GameCraft\Gamecraft2019\Debug\Gamecraft2019.exe
   Gamecraft2019.vcxproj -> C:\Users\student\Desktop\GameCraft\Gamecraft2019\Debug\Gamecraft2019.pdb (Partial PDB)
   C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\libFLAC-8.dll

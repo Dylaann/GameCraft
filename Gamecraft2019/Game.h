@@ -11,7 +11,6 @@
 #include <vector>
 #include "MenuManager.h"
 
-
 using namespace std;
 
 const float FRAMES_PER_SECOND = 60;

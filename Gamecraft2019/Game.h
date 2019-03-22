@@ -7,6 +7,8 @@
 #include <SDL_image.h>
 #include <SDL_mixer.h>
 #include "Resource Manager\ResourceManager.h"
+#include "MenuManager.h"
+
 
 using namespace std;
 
@@ -34,6 +36,8 @@ private:
 	bool m_exitGame = false;
 
 	TTF_Font* Arial;
+
+	MenuManager m_mManager;
 
 	ResourceManager * m_resourceManager;
 };

@@ -128,6 +128,9 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="MenuManager.cpp" />
     <ClCompile Include="Resource Manager\ImageResource.cpp" />
     <ClCompile Include="Resource Manager\ResourceManager.cpp" />

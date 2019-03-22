@@ -7,6 +7,7 @@ GameScene::GameScene()
 
 void GameScene::start()
 {
+	m_grid = new Grid(m_resources);
 	brickTexture = m_resources->getImageResource("red");
 	m_testbrick = new Brick(3, brickTexture, Vector2f(38, 33));
 	m_testbrick->setDropped(false);
@@ -15,6 +16,14 @@ void GameScene::start()
 	//Load the sound effects
 	m_click = Mix_LoadWAV("./ASSETS/SOUNDS/click.wav");
 	Mix_PlayMusic(m_bgm1, -1);
+	std::vector<SDL_Texture*> bricktextures;
+	bricktextures.push_back(m_resources->getImageResource("yellow"));
+	bricktextures.push_back(m_resources->getImageResource("red"));
+	bricktextures.push_back(m_resources->getImageResource("blue"));
+	bricktextures.push_back(m_resources->getImageResource("green"));
+
+	m_generator.setTextures(bricktextures);
+
 	m_gameStarted = true;
 }
 
@@ -29,6 +38,7 @@ void GameScene::update()
 {
 	m_testbrick->update();
 	//m_height++;
+	m_generator.genBricks();
 	if (m_height == 10)
 	{
 		Mix_FadeOutMusic(500);
@@ -38,5 +48,7 @@ void GameScene::update()
 
 void GameScene::draw(SDL_Renderer & renderer)
 {
+	//Draw here
+	m_grid->render(&renderer);
 	m_testbrick->render(renderer);
 }

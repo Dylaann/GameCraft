@@ -38,12 +38,8 @@ Game::Game()
 
 	m_grid = new Grid(m_resourceManager);
 
-<<<<<<< HEAD
 	m_mManager.setResourceHandler(m_resourceManager);
-=======
 	setUpFont();
-	m_mManager.setResourceHandler(*m_resourceManager);
->>>>>>> e530f7cb97915db4efc3fb10a3c0dd836152d537
 	//Set the scene after the systems ptr has been set and the resource manager has been passed over
 	m_mManager.setScene("Game");
 }

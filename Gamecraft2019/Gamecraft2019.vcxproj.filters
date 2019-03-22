@@ -14,6 +14,7 @@
     <ClCompile Include="Vector2f.cpp" />
     <ClCompile Include="Grid\Tile.cpp" />
     <ClCompile Include="Grid\Grid.cpp" />
+    <ClCompile Include="BrickGen.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -51,6 +52,7 @@
     <ClInclude Include="Resource Manager\ResourceManager.h" />
     <ClInclude Include="Resource Manager\SoundResource.h" />
     <ClInclude Include="Grid\Grid.h" />
+    <ClInclude Include="BrickGen.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Gamecraft2019.VC.db" />

@@ -1,0 +1,26 @@
+﻿  BrickGen.cpp
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\math.h(1001): warning C4005: 'M_PI': macro redefinition
+  c:\vs lib\sdl\sdl2-devel-2.0.9-vc\sdl2-2.0.9\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+c:\users\student\desktop\gamecraft\gamecraft\gamecraft2019\brickgen.cpp(5): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\student\desktop\gamecraft\gamecraft\gamecraft2019\brickgen.cpp(18): warning C4018: '<': signed/unsigned mismatch
+  Gamecraft2019.vcxproj -> C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\Debug\Gamecraft2019.exe
+  Gamecraft2019.vcxproj -> C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\Debug\Gamecraft2019.pdb (Partial PDB)
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libFLAC-8.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libfreetype-6.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libjpeg-9.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libmodplug-1.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libmpg123-0.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libogg-0.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libopus-0.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libopusfile-0.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libpng16-16.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libtiff-5.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libvorbis-0.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libvorbisfile-3.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libwebp-7.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\SDL2.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\SDL2_image.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\SDL2_mixer.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\SDL2_ttf.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\zlib1.dll
+  18 File(s) copied

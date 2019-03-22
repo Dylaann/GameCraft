@@ -36,7 +36,6 @@ Game::Game()
 		cout << "Loading..." << endl;
 	}
 
-	m_grid = new Grid(m_resourceManager);
 
 	setUpFont();
 	m_mManager.setResourceHandler(*m_resourceManager);
@@ -55,14 +54,14 @@ void Game::run()
 
 	Uint32 frameTime = 0;
 	Uint32 lastFrameTime = 0;
-	Uint32 deltaTime[[maybe_unused]] = 0;
+	//Uint32 deltaTime[[maybe_unused]] = 0;
 
 	while (!m_exitGame) {
 
 		processEvents();
 		frameTime = SDL_GetTicks();
 
-		deltaTime = frameTime - lastFrameTime;
+		//deltaTime = frameTime - lastFrameTime;
 		lastFrameTime = frameTime;
 
 		//handle input in the scenes when input is implemented
@@ -132,8 +131,6 @@ void Game::render()
 
 	SDL_RenderClear(m_renderer);
 
-	//Draw here
-	m_grid->render(m_renderer);
 	//Draw the current scene
 	m_mManager.draw(*m_renderer);
 

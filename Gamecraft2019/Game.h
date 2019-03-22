@@ -7,7 +7,6 @@
 #include <SDL_image.h>
 #include <SDL_mixer.h>
 #include "Resource Manager\ResourceManager.h"
-#include "Grid\Grid.h"
 #include <vector>
 #include "MenuManager.h"
 
@@ -43,6 +42,5 @@ private:
 
 	ResourceManager * m_resourceManager;
 
-	Grid * m_grid;
 };
 #endif // !GAME_H

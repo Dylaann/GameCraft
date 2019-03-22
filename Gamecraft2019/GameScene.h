@@ -1,7 +1,9 @@
 #pragma once
 #include "Scene.h"
-
+#include "Grid\Grid.h"
 #include "AudioComponent.h"
+#include "BrickGen.h"
+#include <vector>
 
 class GameScene : public Scene
 {
@@ -15,9 +17,12 @@ public:
 	void draw(SDL_Renderer& renderer);
 	//void handleInput(InputSystem& input);
 private:
+	BrickGen m_generator;
+
 	bool m_gameStarted, m_gameOver;
 
 	int m_height = 0;
+	Grid * m_grid;
 
 	Mix_Music* m_bgm1;
 	Mix_Music* m_bgm2;

@@ -30,13 +30,30 @@ Brick::~Brick()
 void Brick::update()
 {
 	//Increment position by velocity vector
-	m_position += m_velocity;
+	m_position.x += m_velocity.x;
+	m_position.y += m_velocity.y;
+
+	for (int i = 0; i < m_blocksize; i++)
+	{
+		m_dstRects.at(i)->x = m_position.x + m_size.x * i;
+		m_dstRects.at(i)->y = m_position.y + m_velocity.y;
+	}
 
 	//If block has been dropped, apply gravity
 	if (m_isDropped)
 	{
 		//Add gravity to velocity
-		m_velocity.y += GRAVITY;
+		if (m_velocity.y < 5)
+			m_velocity.y += GRAVITY;
+
+		if (m_position.y + 33 > 667)
+		{
+			m_position.y = 667 - 33;
+			m_velocity.x = 0;
+			m_velocity.y = 0;
+			m_isDropped = false;
+			//std::system("PAUSE");
+		}
 	}
 }
 

@@ -36,7 +36,6 @@ Game::Game()
 		cout << "Loading..." << endl;
 	}
 
-	m_grid = new Grid(m_resourceManager);
 
 	m_mManager.setResourceHandler(m_resourceManager);
 	setUpFont();
@@ -55,14 +54,14 @@ void Game::run()
 
 	Uint32 frameTime = 0;
 	Uint32 lastFrameTime = 0;
-	Uint32 deltaTime[[maybe_unused]] = 0;
+	//Uint32 deltaTime[[maybe_unused]] = 0;
 
 	while (!m_exitGame) {
 
 		processEvents();
 		frameTime = SDL_GetTicks();
 
-		deltaTime = frameTime - lastFrameTime;
+		//deltaTime = frameTime - lastFrameTime;
 		lastFrameTime = frameTime;
 
 		//handle input in the scenes when input is implemented
@@ -82,35 +81,35 @@ void Game::run()
 
 void Game::processEvents()
 {
-	SDL_Event event;
-	while (SDL_PollEvent(&event)) {
-		switch (event.type) {
-		case SDL_QUIT:
-			break;
-		case SDL_KEYDOWN:
-			if (event.key.keysym.sym == SDLK_ESCAPE)
-				m_exitGame = true;
+	//SDL_Event event;
+	//while (SDL_PollEvent(&event)) {
+	//	switch (event.type) {
+	//	case SDL_QUIT:
+	//		break;
+	//	case SDL_KEYDOWN:
+	//		if (event.key.keysym.sym == SDLK_ESCAPE)
+	//			m_exitGame = true;
 
-			if (event.key.keysym.sym == SDLK_UP)
-				std::cout << "UP PRESSED" << std::endl;
+	//		if (event.key.keysym.sym == SDLK_UP)
+	//			std::cout << "UP PRESSED" << std::endl;
 
-			if (event.key.keysym.sym == SDLK_DOWN)
-				std::cout << "DOWN PRESSED" << std::endl;
+	//		if (event.key.keysym.sym == SDLK_DOWN)
+	//			std::cout << "DOWN PRESSED" << std::endl;
 
-			if (event.key.keysym.sym == SDLK_LEFT)
-				std::cout << "LEFT PRESSED" << std::endl;
+	//		if (event.key.keysym.sym == SDLK_LEFT)
+	//			std::cout << "LEFT PRESSED" << std::endl;
 
-			if (event.key.keysym.sym == SDLK_RIGHT)
-				std::cout << "RIGHT PRESSED" << std::endl;
-				
-			if (event.key.keysym.sym == SDLK_SPACE)
-				std::cout << "SPACE PRESSED" << std::endl;
+	//		if (event.key.keysym.sym == SDLK_RIGHT)
+	//			std::cout << "RIGHT PRESSED" << std::endl;
+	//			
+	//		if (event.key.keysym.sym == SDLK_SPACE)
+	//			std::cout << "SPACE PRESSED" << std::endl;
 
-			break;
-		default:
-			break;
-		}
-	}
+	//		break;
+	//	default:
+	//		break;
+	//	}
+	//}
 }
 
 void Game::update()
@@ -132,8 +131,6 @@ void Game::render()
 
 	SDL_RenderClear(m_renderer);
 
-	//Draw here
-	m_grid->render(m_renderer);
 	//Draw the current scene
 	m_mManager.draw(*m_renderer);
 

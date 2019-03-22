@@ -33,7 +33,7 @@ private:
 	std::pair<float, float> m_position;
 	std::pair<float, float> m_rect;
 
-	TileState m_currentState = OldTile;
+	TileState m_currentState = Empty;
 
 	ResourceManager * myManager;
 };

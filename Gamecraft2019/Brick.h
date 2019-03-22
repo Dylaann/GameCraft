@@ -36,6 +36,7 @@ private:
 	Vector2f m_velocity;
 	Vector2f m_size;
 	int m_blocksize;
+	bool spawn = false;
 	bool m_isDropped = false;
 };
 

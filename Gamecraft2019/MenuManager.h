@@ -2,6 +2,7 @@
 #include <map>
 #include <SDL.h>
 #include "GameScene.h"
+#include "Menu.h"
 #include "Resource Manager\ResourceManager.h"
 
 class MenuManager

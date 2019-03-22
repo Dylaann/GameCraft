@@ -7,7 +7,7 @@
 class Menu
 {
 public: 
-	Menu(SDL_Texture*, std::string, SDL_Color *, SDL_Color *, ResourceManager * manager);
+	Menu(SDL_Texture* st, std::string string, SDL_Color * color, SDL_Color * color2, ResourceManager * manager);
 	void start();
 	void stop();
 	void update(double dt);

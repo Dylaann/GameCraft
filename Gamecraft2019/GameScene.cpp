@@ -10,7 +10,7 @@ void GameScene::start()
 	m_grid = new Grid(m_resources);
 	brickTexture = m_resources->getImageResource("red");
 	m_testbrick = new Brick(3, brickTexture, Vector2f(38, 33));
-	m_testbrick->setDropped(false);
+	//m_testbrick->setDropped(false);
 	m_bgm1 = m_resources->getSoundResource("BGM1");
 	m_bgm2 = m_resources->getSoundResource("BGM2");
 	//Load the sound effects
@@ -43,6 +43,32 @@ void GameScene::update()
 	{
 		Mix_FadeOutMusic(500);
 		Mix_FadeInMusic(m_bgm2, -1, 250);
+	}
+
+	SDL_Event event;
+	while (SDL_PollEvent(&event)) {
+		switch (event.type) {
+		case SDL_QUIT:
+			break;
+		case SDL_KEYDOWN:
+			if (event.key.keysym.sym == SDLK_UP)
+				std::cout << "UP PRESSED" << std::endl;
+
+			if (event.key.keysym.sym == SDLK_DOWN)
+				std::cout << "DOWN PRESSED" << std::endl;
+
+			if (event.key.keysym.sym == SDLK_LEFT)
+				std::cout << "LEFT PRESSED" << std::endl;
+
+			if (event.key.keysym.sym == SDLK_RIGHT)
+				std::cout << "RIGHT PRESSED" << std::endl;
+
+			if (event.key.keysym.sym == SDLK_SPACE)
+				std::cout << "WANkers" << std::endl;
+  				m_testbrick->setDropped(true);
+		default:
+			break;
+		}
 	}
 }
 

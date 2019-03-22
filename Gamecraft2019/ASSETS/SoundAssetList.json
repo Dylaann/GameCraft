@@ -1,3 +1,5 @@
 {
-    "music": "./ASSETS/SOUNDS/music.mp3"
+  "click": "./ASSETS/SOUNDS/click.wav",
+  "BGM1": "./ASSETS/SOUNDS/pataka.wav",
+  "BGM2":  "./ASSETS/SOUNDS/puzzle.wav"
 }

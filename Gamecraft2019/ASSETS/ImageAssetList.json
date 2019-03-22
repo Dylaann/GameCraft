@@ -2,5 +2,6 @@
   "blue": "./ASSETS/IMAGES/blue_1x1.png",
   "green": "./ASSETS/IMAGES/green_1x1.png",
   "red": "./ASSETS/IMAGES/red_1x1.png",
-  "yellow":  "./ASSETS/IMAGES/yellow_1x1.png"
+  "yellow": "./ASSETS/IMAGES/yellow_1x1.png",
+  "greenblock":  "./ASSETS/IMAGES/GreenBlock.png"
 }

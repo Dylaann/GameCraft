@@ -1,3 +1,4 @@
 {
-  "test": "./ASSETS/IMAGES/test.png"
+  "test": "./ASSETS/IMAGES/test.png",
+  "greenBlock":  "./ASSETS/IMAGES/"
 }

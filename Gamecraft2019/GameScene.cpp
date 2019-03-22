@@ -12,7 +12,7 @@ void GameScene::stop()
 {
 }
 
-void GameScene::update(double dt)
+void GameScene::update()
 {
 }
 

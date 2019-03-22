@@ -7,7 +7,7 @@
 class Brick
 {
 public:
-	Brick();
+	Brick(int, SDL_Texture *);
 	~Brick();
 
 	void update();
@@ -19,9 +19,11 @@ public:
 private:
 	SDL_Texture * m_texture;
 	SDL_Surface * m_surface;
+	SDL_Rect * m_rect;
 	Vector2f m_position;
 	Vector2f m_velocity;
 	Vector2f m_size;
+	int m_blocksize;
 };
 
 #endif

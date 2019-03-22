@@ -19,7 +19,8 @@ public:
 private:
 	SDL_Texture * m_texture;
 	SDL_Surface * m_surface;
-	SDL_Rect * m_rect;
+	SDL_Rect * m_src;
+	SDL_Rect * m_dst;
 	Vector2f m_position;
 	Vector2f m_velocity;
 	Vector2f m_size;

@@ -3,6 +3,7 @@
 
 #include "SDL.h"
 #include "Vector2f.h"
+#include <vector>
 
 #define TEXTURE_WIDTH 38
 #define TEXTURE_HEIGHT 33
@@ -29,7 +30,8 @@ private:
 	SDL_Texture * m_texture;
 	SDL_Surface m_surface;
 	SDL_Rect m_src;
-	SDL_Rect m_dst;
+	std::vector<SDL_Rect *> m_dstRects;
+	std::vector<SDL_Texture*> m_textures;
 	Vector2f m_position;
 	Vector2f m_velocity;
 	Vector2f m_size;

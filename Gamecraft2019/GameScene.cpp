@@ -8,8 +8,8 @@ GameScene::GameScene()
 void GameScene::start()
 {
 	brickTexture = m_resources->getImageResource("red");
-	m_testbrick = new Brick(1, brickTexture, Vector2f(50, 50));
-	m_testbrick->setDropped(true);
+	m_testbrick = new Brick(3, brickTexture, Vector2f(38, 33));
+	m_testbrick->setDropped(false);
 	m_bgm1 = m_resources->getSoundResource("BGM1");
 	m_bgm2 = m_resources->getSoundResource("BGM2");
 	//Load the sound effects

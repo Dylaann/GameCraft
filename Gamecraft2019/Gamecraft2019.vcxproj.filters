@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="InputHandler.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="MenuManager.cpp" />
+    <ClCompile Include="Resource Manager\ImageResource.cpp" />
+    <ClCompile Include="Resource Manager\ResourceManager.cpp" />
+    <ClCompile Include="Resource Manager\SoundResource.cpp" />
+    <ClCompile Include="Brick.cpp" />
+    <ClCompile Include="Vector2f.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AudioComponent.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="InputHandler.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="GameScene.h" />
+    <ClInclude Include="MenuManager.h" />
+    <ClInclude Include="Resource Manager\ImageResource.h" />
+    <ClInclude Include="Resource Manager\ResourceManager.h" />
+    <ClInclude Include="Resource Manager\SoundResource.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Brick.h" />
+    <ClInclude Include="Vector2f.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Gamecraft2019.VC.db" />
+    <None Include="ASSETS\ImageAssetList.json" />
+    <None Include="ASSETS\SoundAssetList.json" />
+  </ItemGroup>
+</Project>

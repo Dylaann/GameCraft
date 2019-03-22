@@ -1,7 +1,9 @@
 #include "Brick.h"
 
 
-Brick::Brick()
+Brick::Brick(int blocksize, SDL_Texture * tex) :
+	m_texture(tex),
+	m_blocksize(blocksize)
 {
 
 }
@@ -18,5 +20,5 @@ void Brick::update()
 
 void Brick::render(SDL_Renderer & renderer)
 {
-
+	
 }

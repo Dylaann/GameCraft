@@ -9,6 +9,8 @@
 #include "Resource Manager\ResourceManager.h"
 #include "Grid\Grid.h"
 #include <vector>
+#include "MenuManager.h"
+
 
 using namespace std;
 
@@ -36,6 +38,8 @@ private:
 	bool m_exitGame = false;
 
 	TTF_Font* Arial;
+
+	MenuManager m_mManager;
 
 	ResourceManager * m_resourceManager;
 

@@ -39,6 +39,9 @@ Game::Game()
 	m_grid = new Grid(m_resourceManager);
 
 	setUpFont();
+	m_mManager.setResourceHandler(*m_resourceManager);
+	//Set the scene after the systems ptr has been set and the resource manager has been passed over
+	m_mManager.setScene("Game");
 }
 
 Game::~Game()
@@ -61,6 +64,9 @@ void Game::run()
 
 		deltaTime = frameTime - lastFrameTime;
 		lastFrameTime = frameTime;
+
+		//handle input in the scenes when input is implemented
+		//m_mManager.handleInput(*input);
 
 		update();
 		render();
@@ -109,6 +115,8 @@ void Game::processEvents()
 
 void Game::update()
 {
+	//Update the menu manager
+	m_mManager.update();
 
 }
 
@@ -126,6 +134,8 @@ void Game::render()
 
 	//Draw here
 	m_grid->render(m_renderer);
+	//Draw the current scene
+	m_mManager.draw(*m_renderer);
 
 	SDL_RenderPresent(m_renderer);
 }

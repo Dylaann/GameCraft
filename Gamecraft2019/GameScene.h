@@ -1,4 +1,3 @@
-
 #pragma once
 #include "Scene.h"
 
@@ -11,7 +10,7 @@ public:
 	void start();
 	//void setupUi();
 	void stop();
-	void update(double dt);
+	void update();
 
 	void draw(SDL_Renderer& renderer);
 	//void handleInput(InputSystem& input);

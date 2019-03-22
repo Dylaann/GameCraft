@@ -129,6 +129,7 @@
     <ClCompile Include="Resource Manager\SoundResource.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AudioComponent.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Resource Manager\ImageResource.h" />
     <ClInclude Include="Resource Manager\ResourceManager.h" />

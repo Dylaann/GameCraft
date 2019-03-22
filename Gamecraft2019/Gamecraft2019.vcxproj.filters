@@ -44,5 +44,8 @@
     <ClInclude Include="Resource Manager\SoundResource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="AudioComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -35,7 +35,6 @@ private:
 	int m_windowWidth = 375;
 	int m_windowHeight = 667;
 	bool m_exitGame = false;
-
 	TTF_Font* Arial;
 
 	MenuManager m_mManager;

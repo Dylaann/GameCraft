@@ -12,7 +12,6 @@
     <ClCompile Include="Brick.cpp" />
     <ClCompile Include="Vector2f.cpp" />
     <ClCompile Include="main.cpp" />
-
     <ClCompile Include="Grid\Tile.cpp" />
     <ClCompile Include="Grid\Grid.cpp" />
     <ClCompile Include="BrickGen.cpp" />

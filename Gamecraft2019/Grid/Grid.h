@@ -6,7 +6,6 @@
 #include "../Resource Manager/ResourceManager.h"
 #include "Tile.h"
 
-
 class Grid
 {
 public:

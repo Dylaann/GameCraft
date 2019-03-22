@@ -1,6 +1,10 @@
 #pragma once
 #include "Scene.h"
+<<<<<<< HEAD
 #include "Grid\Grid.h"
+=======
+#include "Brick.h"
+>>>>>>> master
 #include "AudioComponent.h"
 #include "BrickGen.h"
 #include <vector>
@@ -21,6 +25,9 @@ private:
 
 	bool m_gameStarted, m_gameOver;
 
+	Brick * m_testbrick;
+	SDL_Texture * brickTexture;
+	int m_songIndex;
 	int m_height = 0;
 	Grid * m_grid;
 

@@ -2,11 +2,18 @@
 
 GameScene::GameScene()
 {
+
 }
 
 void GameScene::start()
 {
+<<<<<<< HEAD
 	m_grid = new Grid(m_resources);
+=======
+	brickTexture = m_resources->getImageResource("red");
+	m_testbrick = new Brick(3, brickTexture, Vector2f(38, 33));
+	m_testbrick->setDropped(false);
+>>>>>>> master
 	m_bgm1 = m_resources->getSoundResource("BGM1");
 	m_bgm2 = m_resources->getSoundResource("BGM2");
 	//Load the sound effects
@@ -32,6 +39,7 @@ void GameScene::stop()
 
 void GameScene::update()
 {
+	m_testbrick->update();
 	//m_height++;
 	m_generator.genBricks();
 	if (m_height == 10)
@@ -43,6 +51,10 @@ void GameScene::update()
 
 void GameScene::draw(SDL_Renderer & renderer)
 {
+<<<<<<< HEAD
 	//Draw here
 	m_grid->render(&renderer);
+=======
+	m_testbrick->render(renderer);
+>>>>>>> master
 }

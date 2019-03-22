@@ -37,8 +37,8 @@ Game::Game()
 	}
 
 
+	m_mManager.setResourceHandler(m_resourceManager);
 	setUpFont();
-	m_mManager.setResourceHandler(*m_resourceManager);
 	//Set the scene after the systems ptr has been set and the resource manager has been passed over
 	m_mManager.setScene("Game");
 }

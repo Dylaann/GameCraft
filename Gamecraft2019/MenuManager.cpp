@@ -37,7 +37,7 @@ void MenuManager::draw(SDL_Renderer & renderer)
 		m_current->draw(renderer);
 	}
 }
-void MenuManager::setResourceHandler(ResourceManager & resources)
+void MenuManager::setResourceHandler(ResourceManager * resources)
 {
 	for (auto& scene : m_scenes)
 	{

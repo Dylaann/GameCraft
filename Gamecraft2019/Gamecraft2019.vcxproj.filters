@@ -12,6 +12,25 @@
     <ClCompile Include="Resource Manager\SoundResource.cpp" />
     <ClCompile Include="Brick.cpp" />
     <ClCompile Include="Vector2f.cpp" />
+    <ClCompile Include="Grid\Tile.cpp" />
+    <ClCompile Include="Grid\Grid.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Manager\ResourceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Manager\ImageResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource Manager\SoundResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AudioComponent.h" />
@@ -26,6 +45,12 @@
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Brick.h" />
     <ClInclude Include="Vector2f.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="Grid\Tile.h" />
+    <ClInclude Include="Resource Manager\ImageResource.h" />
+    <ClInclude Include="Resource Manager\ResourceManager.h" />
+    <ClInclude Include="Resource Manager\SoundResource.h" />
+    <ClInclude Include="Grid\Grid.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Gamecraft2019.VC.db" />

@@ -36,9 +36,14 @@ Game::Game()
 		cout << "Loading..." << endl;
 	}
 
-	setUpFont();
+	m_grid = new Grid(m_resourceManager);
 
+<<<<<<< HEAD
 	m_mManager.setResourceHandler(m_resourceManager);
+=======
+	setUpFont();
+	m_mManager.setResourceHandler(*m_resourceManager);
+>>>>>>> e530f7cb97915db4efc3fb10a3c0dd836152d537
 	//Set the scene after the systems ptr has been set and the resource manager has been passed over
 	m_mManager.setScene("Game");
 }
@@ -127,11 +132,12 @@ void Game::render()
 		SDL_Log("Could not create a renderer: %s", SDL_GetError());
 	}
 
-	SDL_SetRenderDrawColor(m_renderer, 0, 0, 0, 255);
+	SDL_SetRenderDrawColor(m_renderer, 255, 255, 255, 255);
 
 	SDL_RenderClear(m_renderer);
 
 	//Draw here
+	m_grid->render(m_renderer);
 	//Draw the current scene
 	m_mManager.draw(*m_renderer);
 

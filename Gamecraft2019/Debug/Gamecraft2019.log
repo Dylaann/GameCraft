@@ -1,0 +1,40 @@
+﻿  Vector2f.cpp
+c:\users\student\desktop\gamecraft\gamecraft\gamecraft2019\vector2f.cpp(180): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\users\student\desktop\gamecraft\gamecraft\gamecraft2019\vector2f.cpp(185): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  SoundResource.cpp
+  ResourceManager.cpp
+  ImageResource.cpp
+  MenuManager.cpp
+  GameScene.cpp
+  Menu.cpp
+  main.cpp
+  InputHandler.cpp
+  Game.cpp
+c:\users\student\desktop\gamecraft\gamecraft\gamecraft2019\game.cpp(57): warning C5030: attribute 'maybe_unused' is not recognized
+  Brick.cpp
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\math.h(1001): warning C4005: 'M_PI': macro redefinition
+  c:\vs lib\sdl\sdl2-devel-2.0.9-vc\sdl2-2.0.9\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+  Generating Code...
+c:\users\student\desktop\gamecraft\gamecraft\gamecraft2019\resource manager\imageresource.h(22): warning C4715: 'ImageResource::getTexture': not all control paths return a value
+c:\users\student\desktop\gamecraft\gamecraft\gamecraft2019\resource manager\soundresource.h(22): warning C4715: 'SoundResource::getSound': not all control paths return a value
+  Gamecraft2019.vcxproj -> C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\Debug\Gamecraft2019.exe
+  Gamecraft2019.vcxproj -> C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\Debug\Gamecraft2019.pdb (Partial PDB)
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libFLAC-8.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libfreetype-6.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libjpeg-9.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libmodplug-1.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libmpg123-0.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libogg-0.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libopus-0.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libopusfile-0.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libpng16-16.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libtiff-5.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libvorbis-0.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libvorbisfile-3.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libwebp-7.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\SDL2.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\SDL2_image.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\SDL2_mixer.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\SDL2_ttf.dll
+  C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\zlib1.dll
+  18 File(s) copied

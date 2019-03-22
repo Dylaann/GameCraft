@@ -24,6 +24,9 @@
     <ClCompile Include="Vector2f.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Brick.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">

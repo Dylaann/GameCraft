@@ -1,14 +1,4 @@
-﻿  SoundResource.cpp
-  ResourceManager.cpp
-  ImageResource.cpp
-  main.cpp
-  Game.cpp
-c:\users\student\desktop\gamecraft\gamecraft\gamecraft2019\game.cpp(54): warning C5030: attribute 'maybe_unused' is not recognized
-  Generating Code...
-c:\users\student\desktop\gamecraft\gamecraft\gamecraft2019\resource manager\imageresource.h(22): warning C4715: 'ImageResource::getTexture': not all control paths return a value
-c:\users\student\desktop\gamecraft\gamecraft\gamecraft2019\resource manager\soundresource.h(22): warning C4715: 'SoundResource::getSound': not all control paths return a value
-  LINK : C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\Debug\Gamecraft2019.exe not found or not built by the last incremental link; performing full link
-  Gamecraft2019.vcxproj -> C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\Debug\Gamecraft2019.exe
+﻿  Gamecraft2019.vcxproj -> C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\Debug\Gamecraft2019.exe
   Gamecraft2019.vcxproj -> C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\Debug\Gamecraft2019.pdb (Partial PDB)
   C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libFLAC-8.dll
   C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\\dlls\libfreetype-6.dll

@@ -1,2 +1,6 @@
 #TargetFrameworkVersion=v4.0:PlatformToolSet=v140:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=8.1
+<<<<<<< HEAD
 Debug|x64|C:\Users\student\Desktop\GameCraft\Gamecraft2019\|
+=======
+Debug|x64|C:\Users\student\Desktop\gamecraft\GameCraft\Gamecraft2019\|
+>>>>>>> 0453a72c13aac696d066a4cf45bef10f2463765a

@@ -11,7 +11,7 @@ MenuManager::MenuManager() :
 	m_scenes["Game"] = new GameScene();
 }
 
-void MenuManager::update(double dt)
+void MenuManager::update()
 {
 	//If the current scene is a scene
 	if (nullptr != m_current)
@@ -25,7 +25,7 @@ void MenuManager::update(double dt)
 			m_current->resetSceneChange();
 		}
 
-		m_current->update(dt);
+		m_current->update();
 	}
 }
 
@@ -35,6 +35,13 @@ void MenuManager::draw(SDL_Renderer & renderer)
 	if (nullptr != m_current)
 	{
 		m_current->draw(renderer);
+	}
+}
+void MenuManager::setResourceHandler(ResourceManager * resources)
+{
+	for (auto& scene : m_scenes)
+	{
+		scene.second->setResourceHandler(resources);
 	}
 }
 /*

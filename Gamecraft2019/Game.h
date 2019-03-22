@@ -7,10 +7,13 @@
 #include <SDL_image.h>
 #include <SDL_mixer.h>
 #include "Resource Manager\ResourceManager.h"
+#include "Grid\Grid.h"
+#include <vector>
+#include "MenuManager.h"
 
 using namespace std;
 
-const int FRAMES_PER_SECOND = 60;
+const float FRAMES_PER_SECOND = 60;
 
 class Game
 {
@@ -32,9 +35,12 @@ private:
 	int m_windowWidth = 375;
 	int m_windowHeight = 667;
 	bool m_exitGame = false;
-
 	TTF_Font* Arial;
 
+	MenuManager m_mManager;
+
 	ResourceManager * m_resourceManager;
+
+	Grid * m_grid;
 };
 #endif // !GAME_H

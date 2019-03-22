@@ -3,7 +3,6 @@
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="InputHandler.cpp" />
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="MenuManager.cpp" />
@@ -12,6 +11,7 @@
     <ClCompile Include="Resource Manager\SoundResource.cpp" />
     <ClCompile Include="Brick.cpp" />
     <ClCompile Include="Vector2f.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AudioComponent.h" />

@@ -126,6 +126,7 @@
     <ClCompile Include="Brick.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="InputHandler.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="MenuManager.cpp" />

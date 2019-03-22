@@ -74,9 +74,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-
+      <AdditionalIncludeDirectories>$(SDL_SDK)/include;$(SDL_MIXER)/include;$(SDL_TTF)/include;$(SDL_IMAGE)/include</AdditionalIncludeDirectories>
       <AdditionalIncludeDirectories>Json\;$(SDL_SDK)/include;$(SDL_MIXER)/include;$(SDL_TTF)/include;$(SDL_IMAGE)/include;</AdditionalIncludeDirectories>
-
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SDL_SDK)/lib/x86/;$(SDL_MIXER)/lib/x86/;$(SDL_TTF)/lib/x86/;$(SDL_IMAGE)/lib/x86/;</AdditionalLibraryDirectories>
@@ -124,30 +123,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Brick.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="InputHandler.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="GameScene.cpp" />
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="MenuManager.cpp" />
     <ClCompile Include="Resource Manager\ImageResource.cpp" />
     <ClCompile Include="Resource Manager\ResourceManager.cpp" />
     <ClCompile Include="Resource Manager\SoundResource.cpp" />
+    <ClCompile Include="Vector2f.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AudioComponent.h" />
+    <ClInclude Include="Brick.h" />
     <ClInclude Include="Game.h" />
-
     <ClInclude Include="InputHandler.h" />
     <ClInclude Include="Menu.h" />
-
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="MenuManager.h" />
     <ClInclude Include="Resource Manager\ImageResource.h" />
     <ClInclude Include="Resource Manager\ResourceManager.h" />
     <ClInclude Include="Resource Manager\SoundResource.h" />
     <ClInclude Include="Scene.h" />
-
+    <ClInclude Include="Vector2f.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ASSETS\ImageAssetList.json" />
+    <None Include="ASSETS\SoundAssetList.json" />
+    <None Include="Gamecraft2019.VC.db" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

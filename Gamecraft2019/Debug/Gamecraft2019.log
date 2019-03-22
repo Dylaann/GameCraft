@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿  SoundResource.cpp
   ResourceManager.cpp
   ImageResource.cpp
@@ -8,6 +9,24 @@
   InputHandler.cpp
   Game.cpp
 c:\users\student\desktop\gamecraft\gamecraft2019\game.cpp(54): warning C5030: attribute 'maybe_unused' is not recognized
+=======
+﻿  Vector2f.cpp
+c:\users\student\desktop\gamecraft\gamecraft2019\vector2f.cpp(180): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\users\student\desktop\gamecraft\gamecraft2019\vector2f.cpp(185): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  SoundResource.cpp
+  ResourceManager.cpp
+  ImageResource.cpp
+  MenuManager.cpp
+  GameScene.cpp
+  Menu.cpp
+  main.cpp
+  InputHandler.cpp
+  Game.cpp
+c:\users\student\desktop\gamecraft\gamecraft2019\game.cpp(54): warning C5030: attribute 'maybe_unused' is not recognized
+  Brick.cpp
+c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\math.h(1001): warning C4005: 'M_PI': macro redefinition
+  c:\vs lib\sdl\sdl2-devel-2.0.9-vc\sdl2-2.0.9\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+>>>>>>> a31dd6220ecd4d93ac16af2ce1ed6ef9f0085b14
   Generating Code...
 c:\users\student\desktop\gamecraft\gamecraft2019\resource manager\imageresource.h(22): warning C4715: 'ImageResource::getTexture': not all control paths return a value
 c:\users\student\desktop\gamecraft\gamecraft2019\resource manager\soundresource.h(22): warning C4715: 'SoundResource::getSound': not all control paths return a value

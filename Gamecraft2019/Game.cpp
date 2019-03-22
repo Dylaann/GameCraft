@@ -30,17 +30,17 @@ Game::Game()
 	}
 
 	// Wait until we have assets
-	//m_resourceManager = new ResourceManager(m_renderer);
+	m_resourceManager = new ResourceManager(m_renderer);
 
-	//while (!m_resourceManager->checkLoaded()) {
-		//cout << "Loading..." << endl;
-	//}
+	while (!m_resourceManager->checkLoaded()) {
+		cout << "Loading..." << endl;
+	}
 
 	setUpFont();
 
 	for (int i = 0; i < MAP_WIDTH; i++) {
 		for (int j = 0; j < MAP_HEIGHT; j++) {
-			Tile *temp = new Tile(i * 37.5, 10 + (j * 33), TILE_WIDTH, TILE_HEIGHT);
+			Tile *temp = new Tile(i * 37.5, 10 + (j * 33), TILE_WIDTH, TILE_HEIGHT, m_resourceManager);
 			m_tiles.push_back(temp);
 		}
 	}
@@ -90,6 +90,22 @@ void Game::processEvents()
 		case SDL_KEYDOWN:
 			if (event.key.keysym.sym == SDLK_ESCAPE)
 				m_exitGame = true;
+
+			if (event.key.keysym.sym == SDLK_UP)
+				std::cout << "UP PRESSED" << std::endl;
+
+			if (event.key.keysym.sym == SDLK_DOWN)
+				std::cout << "DOWN PRESSED" << std::endl;
+
+			if (event.key.keysym.sym == SDLK_LEFT)
+				std::cout << "LEFT PRESSED" << std::endl;
+
+			if (event.key.keysym.sym == SDLK_RIGHT)
+				std::cout << "RIGHT PRESSED" << std::endl;
+				
+			if (event.key.keysym.sym == SDLK_SPACE)
+				std::cout << "SPACE PRESSED" << std::endl;
+
 			break;
 		default:
 			break;
@@ -118,7 +134,6 @@ void Game::render()
 	for (auto i : m_tiles) {
 		i->render(m_renderer);
 	}
-
 
 	SDL_RenderPresent(m_renderer);
 }

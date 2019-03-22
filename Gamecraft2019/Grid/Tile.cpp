@@ -23,11 +23,11 @@ void Tile::render(SDL_Renderer * renderer)
 	}
 	else if (m_currentState == TileState::Old) {
 		// Whatever pic
-		//m_currentTexture = myManager->getResource("");
+		m_currentTexture = myManager->getImageResource("red");
 	}
 	else if (m_currentState == TileState::Current) {
 		// Whatever pic
-		//m_currentTexture = myManager->getResource("");
+		m_currentTexture = myManager->getImageResource("yellow");
 	}
 	
 	SDL_RenderCopy(renderer, m_currentTexture, NULL, &m_drawRect);

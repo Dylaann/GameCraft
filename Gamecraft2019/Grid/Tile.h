@@ -31,13 +31,6 @@ private:
 
 	TileState m_currentState = Current;
 
-	SDL_Color red = { 255, 0, 0, 255 };
-	SDL_Color green = { 0, 255, 0, 255 };
-	SDL_Color black = { 0, 0, 0, 255 };
-	SDL_Color m_colour = { 0, 0, 0, 255 };
-
 	ResourceManager * myManager;
-
-	SDL_Texture * m_currentTexture;
 };
 #endif

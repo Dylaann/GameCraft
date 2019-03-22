@@ -36,15 +36,9 @@ Game::Game()
 		cout << "Loading..." << endl;
 	}
 
+	m_grid = new Grid(m_resourceManager);
+
 	setUpFont();
-
-	for (int i = 0; i < MAP_WIDTH; i++) {
-		for (int j = 0; j < MAP_HEIGHT; j++) {
-			Tile *temp = new Tile(i * 37.5, 10 + (j * 33), TILE_WIDTH, TILE_HEIGHT, m_resourceManager);
-			m_tiles.push_back(temp);
-		}
-	}
-
 }
 
 Game::~Game()
@@ -131,9 +125,7 @@ void Game::render()
 	SDL_RenderClear(m_renderer);
 
 	//Draw here
-	for (auto i : m_tiles) {
-		i->render(m_renderer);
-	}
+	m_grid->render(m_renderer);
 
 	SDL_RenderPresent(m_renderer);
 }

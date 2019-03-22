@@ -1,29 +1,12 @@
-﻿  ResourceManager.cpp
+﻿  Grid.cpp
+c:\users\student\desktop\gamecraft\gamecraft2019\grid\grid.cpp(7): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+c:\users\student\desktop\gamecraft\gamecraft2019\grid\grid.cpp(7): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  Game.cpp
+c:\users\student\desktop\gamecraft\gamecraft2019\game.cpp(55): warning C5030: attribute 'maybe_unused' is not recognized
   Generating Code...
-c:\users\student\desktop\gamecraft\gamecraft2019\resource manager\imageresource.h(22): warning C4715: 'ImageResource::getTexture': not all control paths return a value
-c:\users\student\desktop\gamecraft\gamecraft2019\resource manager\soundresource.h(22): warning C4715: 'SoundResource::getSound': not all control paths return a value
   Compiling...
   main.cpp
-  Tile.cpp
-c:\program files (x86)\microsoft visual studio 14.0\vc\include\utility(175): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-  c:\users\student\desktop\gamecraft\gamecraft2019\grid\tile.cpp(6): note: see reference to function template instantiation 'std::pair<float,float>::pair<int&,int&,void,0>(_Other1,_Other2) noexcept' being compiled
-          with
-          [
-              _Other1=int &,
-              _Other2=int &
-          ]
-  c:\users\student\desktop\gamecraft\gamecraft2019\grid\tile.cpp(3): note: see reference to function template instantiation 'std::pair<float,float>::pair<int&,int&,void,0>(_Other1,_Other2) noexcept' being compiled
-          with
-          [
-              _Other1=int &,
-              _Other2=int &
-          ]
-  Game.cpp
-c:\users\student\desktop\gamecraft\gamecraft2019\game.cpp(43): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
-c:\users\student\desktop\gamecraft\gamecraft2019\game.cpp(43): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-c:\users\student\desktop\gamecraft\gamecraft2019\game.cpp(61): warning C5030: attribute 'maybe_unused' is not recognized
   Generating Code...
-c:\users\student\desktop\gamecraft\gamecraft2019\resource manager\imageresource.h(22): warning C4715: 'ImageResource::getTexture': not all control paths return a value
 SoundResource.obj : warning LNK4204: 'C:\Users\student\Desktop\GameCraft\Gamecraft2019\Debug\vc140.pdb' is missing debugging information for referencing module; linking object as if no debug info
 ImageResource.obj : warning LNK4204: 'C:\Users\student\Desktop\GameCraft\Gamecraft2019\Debug\vc140.pdb' is missing debugging information for referencing module; linking object as if no debug info
   Gamecraft2019.vcxproj -> C:\Users\student\Desktop\GameCraft\Gamecraft2019\Debug\Gamecraft2019.exe

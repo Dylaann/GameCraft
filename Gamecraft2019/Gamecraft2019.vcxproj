@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="Brick.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Grid\Grid.cpp" />
     <ClCompile Include="Grid\Tile.cpp" />
     <ClCompile Include="InputHandler.cpp" />
     <ClCompile Include="main.cpp" />
@@ -140,6 +141,7 @@
     <ClInclude Include="AudioComponent.h" />
     <ClInclude Include="Brick.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Grid\Grid.h" />
     <ClInclude Include="Grid\Tile.h" />
     <ClInclude Include="InputHandler.h" />
     <ClInclude Include="Menu.h" />

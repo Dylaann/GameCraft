@@ -1,6 +1,6 @@
 #pragma once
 #include "Scene.h"
-
+#include "Brick.h"
 #include "AudioComponent.h"
 
 class GameScene : public Scene
@@ -18,7 +18,8 @@ private:
 	bool m_audioCreated;
 	bool m_gameStarted, m_gameOver;
 
+	Brick * m_testbrick;
+	SDL_Texture * brickTexture;
 	int m_songIndex;
-
 
 };

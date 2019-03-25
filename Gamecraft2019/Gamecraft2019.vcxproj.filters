@@ -51,7 +51,6 @@
     <ClInclude Include="BrickGen.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Gamecraft2019.VC.db" />
     <None Include="ASSETS\ImageAssetList.json" />
     <None Include="ASSETS\SoundAssetList.json" />
   </ItemGroup>

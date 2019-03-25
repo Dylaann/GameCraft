@@ -5,6 +5,7 @@
 #include "AudioComponent.h"
 #include "BrickGen.h"
 #include <vector>
+#include <SDL_ttf.h>
 
 class GameScene : public Scene
 {
@@ -31,4 +32,10 @@ private:
 	Mix_Music* m_bgm1;
 	Mix_Music* m_bgm2;
 	Mix_Chunk* m_click;
+	int m_stack = 1;
+	int m_currentBrickLen = 3;
+	int m_score = 0;
+	std::vector<Brick*> m_bricks;
+
+	TTF_Font* Arial;
 };

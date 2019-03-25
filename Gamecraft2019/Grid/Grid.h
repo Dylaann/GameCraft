@@ -5,6 +5,7 @@
 #include <iostream>
 #include "../Resource Manager/ResourceManager.h"
 #include "Tile.h"
+#include <string.h>
 
 class Grid
 {
@@ -13,6 +14,10 @@ public:
 	~Grid();
 
 	void render(SDL_Renderer *renderer);
+
+	void setTileState(int x, int y,	std::string tileStateStr);
+	void moveTiles();
+	int checkMiss();
 
 private:
 	const float MAP_WIDTH = 10;

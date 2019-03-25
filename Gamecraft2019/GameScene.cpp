@@ -7,9 +7,18 @@ GameScene::GameScene()
 
 void GameScene::start()
 {
+	srand(time(NULL));
+	if (TTF_Init() < 0)
+	{
+		std::cout << "Error initialising font" << std::endl;
+	}
+	const char *path = "ASSETS\\FONTS\\arial.ttf";
+	Arial = TTF_OpenFont(path, 50);
+
 	m_grid = new Grid(m_resources);
 	brickTexture = m_resources->getImageResource("red");
-	m_testbrick = new Brick(3, brickTexture, Vector2f(38, 33));
+	int k = rand() % 7;
+	m_testbrick = new Brick(3, brickTexture, Vector2f(37.5 * k, 76));
 	//m_testbrick->setDropped(false);
 	m_bgm1 = m_resources->getSoundResource("BGM1");
 	m_bgm2 = m_resources->getSoundResource("BGM2");
@@ -36,7 +45,7 @@ void GameScene::stop()
 
 void GameScene::update()
 {
-	m_testbrick->update();
+	m_testbrick->update(m_stack, m_score);
 	//m_height++;
 	m_generator.genBricks();
 	if (m_height == 10)
@@ -51,23 +60,54 @@ void GameScene::update()
 		case SDL_QUIT:
 			break;
 		case SDL_KEYDOWN:
-			if (event.key.keysym.sym == SDLK_UP)
-				std::cout << "UP PRESSED" << std::endl;
+			if (event.key.keysym.sym == SDLK_UP) {
+			}
 
-			if (event.key.keysym.sym == SDLK_DOWN)
-				std::cout << "DOWN PRESSED" << std::endl;
+			if (event.key.keysym.sym == SDLK_DOWN) {
+			}
 
-			if (event.key.keysym.sym == SDLK_LEFT)
-				std::cout << "LEFT PRESSED" << std::endl;
+			if (event.key.keysym.sym == SDLK_LEFT) {
+			}
 
-			if (event.key.keysym.sym == SDLK_RIGHT)
-				std::cout << "RIGHT PRESSED" << std::endl;
+			if (event.key.keysym.sym == SDLK_RIGHT) {
+			}
 
-			if (event.key.keysym.sym == SDLK_SPACE)
-				std::cout << "WANkers" << std::endl;
-  				m_testbrick->setDropped(true);
+			if (event.key.keysym.sym == SDLK_SPACE) {
+				m_testbrick->setDropped(true);
+			}
 		default:
 			break;
+		}
+	}
+
+	if (m_testbrick->getDone()) {
+		for (int i = 0; i < m_testbrick->getBlockSize(); i++) {
+			m_grid->setTileState(m_testbrick->getPosition().x + (i * 37.5), m_testbrick->getPosition().y, "OldTile");
+			//m_bricks.push_back(m_testbrick);
+		}
+
+		if (m_stack <= 10) {
+			m_stack += 1;
+			m_score += 1;
+		}
+		else {
+			m_grid->moveTiles();
+			m_score += 1;
+		}
+
+		m_testbrick->setBlockSize(m_testbrick->getBlockSize() - m_grid->checkMiss());
+		m_currentBrickLen = m_testbrick->getBlockSize();
+
+		if (m_currentBrickLen < 1) {
+			m_gameOver = true;
+		}
+
+		int k = rand() % 7;
+		m_testbrick = new Brick(m_currentBrickLen, brickTexture, Vector2f(37.5 * k, 76));
+	}
+	else {
+		for (int i = 0; i < m_testbrick->getBlockSize(); i++) {
+			//m_grid->setTileState(m_testbrick->getPosition().x + (i * 38), m_testbrick->getPosition().y, "CurrentTile");
 		}
 	}
 }
@@ -76,5 +116,7 @@ void GameScene::draw(SDL_Renderer & renderer)
 {
 	//Draw here
 	m_grid->render(&renderer);
-	m_testbrick->render(renderer);
+	if (!m_testbrick->getDone()) {
+		m_testbrick->render(renderer);
+	}
 }

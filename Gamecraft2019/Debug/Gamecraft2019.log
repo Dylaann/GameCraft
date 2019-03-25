@@ -1,57 +1,58 @@
-﻿  MenuManager.cpp
-c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\math.h(1001): warning C4005: 'M_PI': macro redefinition
-  c:\vs lib\sdl\sdl2-devel-2.0.9-vc\sdl2-2.0.9\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
-  GameScene.cpp
-c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\math.h(1001): warning C4005: 'M_PI': macro redefinition
-  c:\vs lib\sdl\sdl2-devel-2.0.9-vc\sdl2-2.0.9\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
-c:\users\student\desktop\gamecraft\gamecraft2019\gamescene.cpp(32): warning C4150: deletion of pointer to incomplete type '_Mix_Music'; no destructor called
-  c:\vs lib\sdl\sdl2_mixer-devel-2.0.4-vc\sdl2_mixer-2.0.4\include\sdl_mixer.h(143): note: see declaration of '_Mix_Music'
-c:\users\student\desktop\gamecraft\gamecraft2019\gamescene.cpp(33): warning C4150: deletion of pointer to incomplete type '_Mix_Music'; no destructor called
-  c:\vs lib\sdl\sdl2_mixer-devel-2.0.4-vc\sdl2_mixer-2.0.4\include\sdl_mixer.h(143): note: see declaration of '_Mix_Music'
-  Game.cpp
-c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\math.h(1001): warning C4005: 'M_PI': macro redefinition
-  c:\vs lib\sdl\sdl2-devel-2.0.9-vc\sdl2-2.0.9\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+﻿  Brick.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\brick.cpp(15): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\brick.cpp(16): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\brick.cpp(51): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\brick.cpp(52): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\brick.cpp(60): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\brick.cpp(64): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   BrickGen.cpp
-c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\math.h(1001): warning C4005: 'M_PI': macro redefinition
-  c:\vs lib\sdl\sdl2-devel-2.0.9-vc\sdl2-2.0.9\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
-c:\users\student\desktop\gamecraft\gamecraft2019\brickgen.cpp(5): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\student\desktop\gamecraft\gamecraft2019\brickgen.cpp(18): warning C4018: '<': signed/unsigned mismatch
-  Brick.cpp
-c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\math.h(1001): warning C4005: 'M_PI': macro redefinition
-  c:\vs lib\sdl\sdl2-devel-2.0.9-vc\sdl2-2.0.9\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
-c:\users\student\desktop\gamecraft\gamecraft2019\brick.cpp(15): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\student\desktop\gamecraft\gamecraft2019\brick.cpp(16): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\student\desktop\gamecraft\gamecraft2019\brick.cpp(38): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\student\desktop\gamecraft\gamecraft2019\brick.cpp(39): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\student\desktop\gamecraft\gamecraft2019\brick.cpp(47): warning C4305: '+=': truncation from 'double' to 'float'
-  Generating Code...
-c:\users\student\desktop\gamecraft\gamecraft2019\resource manager\imageresource.h(22): warning C4715: 'ImageResource::getTexture': not all control paths return a value
-c:\users\student\desktop\gamecraft\gamecraft2019\resource manager\soundresource.h(22): warning C4715: 'SoundResource::getSound': not all control paths return a value
-  Compiling...
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\brickgen.cpp(5): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\brickgen.cpp(18): warning C4018: '<': signed/unsigned mismatch
+  Game.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+  GameScene.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\gamescene.cpp(10): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\gamescene.cpp(14): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\gamescene.cpp(34): warning C4150: deletion of pointer to incomplete type '_Mix_Music'; no destructor called
+  c:\sdl2-2.0.8\sdl2_mixer-2.0.4\include\sdl_mixer.h(143): note: see declaration of '_Mix_Music'
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\gamescene.cpp(35): warning C4150: deletion of pointer to incomplete type '_Mix_Music'; no destructor called
+  c:\sdl2-2.0.8\sdl2_mixer-2.0.4\include\sdl_mixer.h(143): note: see declaration of '_Mix_Music'
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\gamescene.cpp(78): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\gamescene.cpp(78): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\gamescene.cpp(99): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  MenuManager.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
   main.cpp
-c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\math.h(1001): warning C4005: 'M_PI': macro redefinition
-  c:\vs lib\sdl\sdl2-devel-2.0.9-vc\sdl2-2.0.9\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
   Generating Code...
-  Skipping... (no relevant changes detected)
-  Menu.cpp
-  Gamecraft2019.vcxproj -> C:\Users\student\Desktop\GameCraft\Gamecraft2019\Debug\Gamecraft2019.exe
-  Gamecraft2019.vcxproj -> C:\Users\student\Desktop\GameCraft\Gamecraft2019\Debug\Gamecraft2019.pdb (Partial PDB)
-  C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\libFLAC-8.dll
-  C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\libfreetype-6.dll
-  C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\libjpeg-9.dll
-  C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\libmodplug-1.dll
-  C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\libmpg123-0.dll
-  C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\libogg-0.dll
-  C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\libopus-0.dll
-  C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\libopusfile-0.dll
-  C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\libpng16-16.dll
-  C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\libtiff-5.dll
-  C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\libvorbis-0.dll
-  C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\libvorbisfile-3.dll
-  C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\libwebp-7.dll
-  C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\SDL2.dll
-  C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\SDL2_image.dll
-  C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\SDL2_mixer.dll
-  C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\SDL2_ttf.dll
-  C:\Users\student\Desktop\GameCraft\Gamecraft2019\\dlls\zlib1.dll
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\resource manager\imageresource.h(22): warning C4715: 'ImageResource::getTexture': not all control paths return a value
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\resource manager\soundresource.h(22): warning C4715: 'SoundResource::getSound': not all control paths return a value
+  Gamecraft2019.vcxproj -> C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\Debug\Gamecraft2019.exe
+  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libFLAC-8.dll
+  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libfreetype-6.dll
+  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libjpeg-9.dll
+  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libmodplug-1.dll
+  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libmpg123-0.dll
+  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libogg-0.dll
+  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libopus-0.dll
+  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libopusfile-0.dll
+  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libpng16-16.dll
+  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libtiff-5.dll
+  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libvorbis-0.dll
+  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libvorbisfile-3.dll
+  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libwebp-7.dll
+  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\SDL2.dll
+  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\SDL2_image.dll
+  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\SDL2_mixer.dll
+  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\SDL2_ttf.dll
+  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\zlib1.dll
   18 File(s) copied

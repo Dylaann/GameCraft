@@ -27,8 +27,21 @@ Brick::~Brick()
 
 }
 
-void Brick::update()
+void Brick::update(int stack, int score)
 {
+	if (score > 10) {
+		speed = 10;
+	}
+	if (score > 10) {
+		speed = 15;
+	}
+	if (score > 15) {
+		speed = 20;
+	}
+	if (score > 20) {
+		speed = 30;
+	}
+
 	//Increment position by velocity vector
 	m_position.x += m_velocity.x;
 	m_position.y += m_velocity.y;
@@ -43,17 +56,30 @@ void Brick::update()
 	if (m_isDropped)
 	{
 		//Add gravity to velocity
-		if (m_velocity.y < 5)
+		if (m_velocity.y < 8.8)
 			m_velocity.y += GRAVITY;
 
-		if (m_position.y + 33 > 667)
+		if (m_position.y + (33 * stack) > 667)
 		{
-			m_position.y = 667 - 33;
+			m_position.y = 667 - (33 * stack);
 			m_velocity.x = 0;
 			m_velocity.y = 0;
-			m_isDropped = false;
+			m_done = true;
 			//std::system("PAUSE");
 		}
+	}
+	else {
+		if (m_moveSpeed > m_moveTime) {
+			if (m_moveRight) {
+				moveRight();
+			}
+			else {
+				moveLeft();
+			}
+			m_moveSpeed = 0;
+		}
+
+		m_moveSpeed += speed;
 	}
 }
 
@@ -68,4 +94,27 @@ void Brick::render(SDL_Renderer & renderer)
 	{
 		SDL_RenderCopy(&renderer, m_textures.at(i), &m_src, m_dstRects.at(i));
 	}
+}
+
+void Brick::moveLeft()
+{
+	if (m_position.x > 0) {
+		m_position.x -= 37.5;
+		m_moveRight = false;
+	}
+	else {
+		m_moveRight = true;
+	}
+}
+
+void Brick::moveRight()
+{
+	if (m_position.x + (m_blocksize * 37.5) < 375) {
+		m_position.x += 37.5;
+		m_moveRight = true;
+	}
+	else {
+		m_moveRight = false;
+	}
+	
 }

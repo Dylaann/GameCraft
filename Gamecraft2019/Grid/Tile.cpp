@@ -21,16 +21,6 @@ Tile::~Tile()
 
 void Tile::render(SDL_Renderer * renderer)
 {
-	if (m_currentState == TileState::Empty) {
-		m_currentTexture = NULL;
-	}
-	else if (m_currentState == TileState::OldTile) {
-		m_currentTexture = myManager->getImageResource("red");
-	}
-	else if (m_currentState == TileState::CurrentTile) {
-		m_currentTexture = myManager->getImageResource("yellow");
-	}
-	
 	SDL_RenderCopy(renderer, m_currentTexture, NULL, &m_drawRect);
 }
 
@@ -38,8 +28,14 @@ void Tile::setState(std::string newState)
 {
 	if (newState == "OldTile") {
 		m_currentState = TileState::OldTile;
+		m_currentTexture = myManager->getImageResource("red");
 	}
 	else if (newState == "CurrentTile") {
 		m_currentState = TileState::CurrentTile;
+		m_currentTexture = myManager->getImageResource("yellow");
+	}
+	else if (newState == "Empty") {
+		m_currentState = TileState::Empty;
+		m_currentTexture = NULL;
 	}
 }

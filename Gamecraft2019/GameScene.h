@@ -38,4 +38,8 @@ private:
 	std::vector<Brick*> m_bricks;
 
 	TTF_Font* Arial;
+	SDL_Texture* m_message;
+	SDL_Rect m_message_rect;
+	SDL_Surface* surfaceMessage;
+	SDL_Color m_scoreCol = { 255, 255, 255, 255 };
 };

@@ -32,13 +32,13 @@ void Brick::update(int stack, int score)
 	if (score > 10) {
 		speed = 10;
 	}
-	if (score > 10) {
+	if (score > 15) {
 		speed = 15;
 	}
-	if (score > 15) {
+	if (score > 20) {
 		speed = 20;
 	}
-	if (score > 20) {
+	if (score > 30) {
 		speed = 30;
 	}
 

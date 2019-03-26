@@ -14,9 +14,17 @@ void GameScene::start()
 	}
 	const char *path = "ASSETS\\FONTS\\arial.ttf";
 	Arial = TTF_OpenFont(path, 50);
+	std::string temp= "Score: " + std::to_string(m_score);
+
+	surfaceMessage = TTF_RenderText_Blended(Arial, temp.c_str(), m_scoreCol);
+	m_message_rect.x = float(0);
+	m_message_rect.y = float(0);
+
+	m_message_rect.w = 200;
+	m_message_rect.h = 70;
 
 	m_grid = new Grid(m_resources);
-	brickTexture = m_resources->getImageResource("red");
+	brickTexture = m_resources->getImageResource("blue");
 	int k = rand() % 7;
 	m_testbrick = new Brick(3, brickTexture, Vector2f(37.5 * k, 76));
 	//m_testbrick->setDropped(false);
@@ -83,7 +91,6 @@ void GameScene::update()
 	if (m_testbrick->getDone()) {
 		for (int i = 0; i < m_testbrick->getBlockSize(); i++) {
 			m_grid->setTileState(m_testbrick->getPosition().x + (i * 37.5), m_testbrick->getPosition().y, "OldTile");
-			//m_bricks.push_back(m_testbrick);
 		}
 
 		if (m_stack <= 10) {
@@ -107,16 +114,24 @@ void GameScene::update()
 	}
 	else {
 		for (int i = 0; i < m_testbrick->getBlockSize(); i++) {
-			//m_grid->setTileState(m_testbrick->getPosition().x + (i * 38), m_testbrick->getPosition().y, "CurrentTile");
 		}
 	}
+
 }
 
 void GameScene::draw(SDL_Renderer & renderer)
 {
 	//Draw here
+	SDL_DestroyTexture(m_message);
+	std::string temp = "Score: " + std::to_string(m_score);
+	surfaceMessage = TTF_RenderText_Blended(Arial, temp.c_str(), m_scoreCol);
+	m_message = SDL_CreateTextureFromSurface(&renderer, surfaceMessage);
+	SDL_FreeSurface(surfaceMessage);
+
 	m_grid->render(&renderer);
 	if (!m_testbrick->getDone()) {
 		m_testbrick->render(renderer);
 	}
+
+	SDL_RenderCopy(&renderer, m_message, NULL, &m_message_rect);
 }

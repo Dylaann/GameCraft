@@ -17,7 +17,7 @@ public:
 	~LeaderBoard();
 
 	void render();
-	void save();
+	void save(std::string name, int score);
 	void load();
 
 private:

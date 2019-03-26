@@ -6,6 +6,7 @@
 #include "BrickGen.h"
 #include <vector>
 #include <SDL_ttf.h>
+#include "LeaderBoard/LeaderBoard.h"
 
 class GameScene : public Scene
 {
@@ -23,7 +24,7 @@ private:
 
 	bool m_gameStarted, m_gameOver;
 
-	Brick * m_testbrick;
+	Brick * m_currentbrick;
 	SDL_Texture * brickTexture;
 	int m_songIndex;
 	int m_height = 0;
@@ -42,4 +43,6 @@ private:
 	SDL_Rect m_message_rect;
 	SDL_Surface* surfaceMessage;
 	SDL_Color m_scoreCol = { 255, 255, 255, 255 };
+
+	LeaderBoard * m_leaderboard;
 };

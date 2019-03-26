@@ -15,6 +15,7 @@
     <ClCompile Include="Grid\Tile.cpp" />
     <ClCompile Include="Grid\Grid.cpp" />
     <ClCompile Include="BrickGen.cpp" />
+    <ClCompile Include="LeaderBoard\LeaderBoard.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -49,6 +50,7 @@
     <ClInclude Include="Grid\Tile.h" />
     <ClInclude Include="Grid\Grid.h" />
     <ClInclude Include="BrickGen.h" />
+    <ClInclude Include="LeaderBoard\LeaderBoard.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ASSETS\ImageAssetList.json" />

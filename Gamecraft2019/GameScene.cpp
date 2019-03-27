@@ -40,7 +40,7 @@ void GameScene::start()
 	bricktextures.push_back(m_resources->getImageResource("green"));
 
 	m_generator.setTextures(bricktextures);
-
+	
 	m_gameStarted = true;
 
 	m_leaderboard = new LeaderBoard();

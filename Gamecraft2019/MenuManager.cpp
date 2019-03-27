@@ -8,8 +8,8 @@ MenuManager::MenuManager() :
 		printf("TTF_Init: %s\n", TTF_GetError());
 	}*/
 	//m_scenes["Main Menu"] = new MainMenuScene();
+	m_scenes["Menu"] = new Menu();
 	m_scenes["Game"] = new GameScene();
-	//m_scenes["Menu"] = new Menu();
 }
 
 void MenuManager::update()

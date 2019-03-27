@@ -1,0 +1,107 @@
+﻿  Brick.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\brick.cpp(15): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\brick.cpp(16): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\brick.cpp(51): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\brick.cpp(52): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\brick.cpp(60): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\brick.cpp(64): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  BrickGen.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\brickgen.cpp(5): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\brickgen.cpp(18): warning C4018: '<': signed/unsigned mismatch
+  Game.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\menu.h(11): warning C4005: 'TEXTURE_WIDTH': macro redefinition
+  c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\brick.h(8): note: see previous definition of 'TEXTURE_WIDTH'
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\menu.h(12): warning C4005: 'TEXTURE_HEIGHT': macro redefinition
+  c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\brick.h(9): note: see previous definition of 'TEXTURE_HEIGHT'
+  Grid.cpp
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\grid\grid.cpp(7): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\grid\grid.cpp(7): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  Tile.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\utility(201): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\grid\tile.cpp(6): note: see reference to function template instantiation 'std::pair<float,float>::pair<int&,int&,0>(_Other1,_Other2) noexcept' being compiled
+          with
+          [
+              _Other1=int &,
+              _Other2=int &
+          ]
+  c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\grid\tile.cpp(3): note: see reference to function template instantiation 'std::pair<float,float>::pair<int&,int&,0>(_Other1,_Other2) noexcept' being compiled
+          with
+          [
+              _Other1=int &,
+              _Other2=int &
+          ]
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.14.26428\include\utility(202): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  InputHandler.cpp
+  LeaderBoard.cpp
+  main.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\menu.h(11): warning C4005: 'TEXTURE_WIDTH': macro redefinition
+  c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\brick.h(8): note: see previous definition of 'TEXTURE_WIDTH'
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\menu.h(12): warning C4005: 'TEXTURE_HEIGHT': macro redefinition
+  c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\brick.h(9): note: see previous definition of 'TEXTURE_HEIGHT'
+  Menu.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\menu.cpp(11): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\menu.cpp(12): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  GameScene.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\gamescene.cpp(9): warning C4018: '<': signed/unsigned mismatch
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\gamescene.cpp(12): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\gamescene.cpp(18): warning C4018: '<': signed/unsigned mismatch
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\gamescene.cpp(21): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\gamescene.cpp(27): warning C4018: '<': signed/unsigned mismatch
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\gamescene.cpp(30): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\gamescene.cpp(70): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\gamescene.cpp(93): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\gamescene.cpp(94): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\gamescene.cpp(190): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\gamescene.cpp(190): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  MenuManager.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\menu.h(11): warning C4005: 'TEXTURE_WIDTH': macro redefinition
+  c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\brick.h(8): note: see previous definition of 'TEXTURE_WIDTH'
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\menu.h(12): warning C4005: 'TEXTURE_HEIGHT': macro redefinition
+  c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\brick.h(9): note: see previous definition of 'TEXTURE_HEIGHT'
+  ImageResource.cpp
+  ResourceManager.cpp
+  SoundResource.cpp
+  Vector2f.cpp
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\vector2f.cpp(180): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\vector2f.cpp(185): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\resource manager\imageresource.h(22): warning C4715: 'ImageResource::getTexture': not all control paths return a value
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\resource manager\soundresource.h(22): warning C4715: 'SoundResource::getSound': not all control paths return a value
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\resource manager\imageresource.h(22): warning C4715: 'ImageResource::getTexture': not all control paths return a value
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\resource manager\soundresource.h(22): warning C4715: 'SoundResource::getSound': not all control paths return a value
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\resource manager\imageresource.h(22): warning C4715: 'ImageResource::getTexture': not all control paths return a value
+c:\users\gameuser\documents\games eng\gamecraft\gamecraft2019\resource manager\imageresource.h(22): warning C4715: 'ImageResource::getTexture': not all control paths return a value
+  Gamecraft2019.vcxproj -> C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\Debug\Gamecraft2019.exe
+  C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\\dlls\libFLAC-8.dll
+  C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\\dlls\libfreetype-6.dll
+  C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\\dlls\libjpeg-9.dll
+  C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\\dlls\libmodplug-1.dll
+  C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\\dlls\libmpg123-0.dll
+  C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\\dlls\libogg-0.dll
+  C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\\dlls\libopus-0.dll
+  C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\\dlls\libopusfile-0.dll
+  C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\\dlls\libpng16-16.dll
+  C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\\dlls\libtiff-5.dll
+  C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\\dlls\libvorbis-0.dll
+  C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\\dlls\libvorbisfile-3.dll
+  C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\\dlls\libwebp-7.dll
+  C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\\dlls\SDL2.dll
+  C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\\dlls\SDL2_image.dll
+  C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\\dlls\SDL2_mixer.dll
+  C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\\dlls\SDL2_ttf.dll
+  C:\Users\gameuser\Documents\Games Eng\GameCraft\Gamecraft2019\\dlls\zlib1.dll
+  18 File(s) copied

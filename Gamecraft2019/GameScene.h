@@ -31,9 +31,15 @@ private:
 	int m_height = 0;
 	Grid * m_grid;
 
+	SDL_Texture* m_BG1;
+	SDL_Texture* m_BG2;
+	SDL_Rect m_BG1rect;
+	SDL_Rect m_BG2rect;
+
 	Mix_Music* m_bgm1;
 	Mix_Music* m_bgm2;
 	Mix_Chunk* m_click;
+	bool songChanged = false;
 	int m_stack = 1;
 	int m_currentBrickLen = 3;
 	int m_score = 0;

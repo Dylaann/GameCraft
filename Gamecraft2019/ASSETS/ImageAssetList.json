@@ -6,5 +6,7 @@
   "blueButton": "./ASSETS/IMAGES/blue.png",
   "yellowButton": "./ASSETS/IMAGES/yellow.png",
   "greenButton": "./ASSETS/IMAGES/green.png",
-  "redButton":  "./ASSETS/IMAGES/red.png"
+  "redButton": "./ASSETS/IMAGES/red.png",
+  "BG1": "./ASSETS/IMAGES/BG1.png",
+  "BG2": "./ASSETS/IMAGES/BG2.png"
 }

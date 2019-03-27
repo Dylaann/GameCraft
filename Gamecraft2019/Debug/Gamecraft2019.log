@@ -1,9 +1,41 @@
-﻿  Menu.cpp
+﻿  Game.cpp
 c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
   c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
-c:\users\dylmr\desktop\gamecraft\gamecraft2019\menu.cpp(11): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\dylmr\desktop\gamecraft\gamecraft2019\menu.cpp(12): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\menu.h(11): warning C4005: 'TEXTURE_WIDTH': macro redefinition
+  c:\users\dylmr\desktop\gamecraft\gamecraft2019\brick.h(8): note: see previous definition of 'TEXTURE_WIDTH'
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\menu.h(12): warning C4005: 'TEXTURE_HEIGHT': macro redefinition
+  c:\users\dylmr\desktop\gamecraft\gamecraft2019\brick.h(9): note: see previous definition of 'TEXTURE_HEIGHT'
+  GameScene.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\gamescene.cpp(9): warning C4018: '<': signed/unsigned mismatch
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\gamescene.cpp(12): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\gamescene.cpp(18): warning C4018: '<': signed/unsigned mismatch
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\gamescene.cpp(21): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\gamescene.cpp(27): warning C4018: '<': signed/unsigned mismatch
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\gamescene.cpp(30): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\gamescene.cpp(70): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\gamescene.cpp(93): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\gamescene.cpp(94): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\gamescene.cpp(174): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\gamescene.cpp(174): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  MenuManager.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\menu.h(11): warning C4005: 'TEXTURE_WIDTH': macro redefinition
+  c:\users\dylmr\desktop\gamecraft\gamecraft2019\brick.h(8): note: see previous definition of 'TEXTURE_WIDTH'
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\menu.h(12): warning C4005: 'TEXTURE_HEIGHT': macro redefinition
+  c:\users\dylmr\desktop\gamecraft\gamecraft2019\brick.h(9): note: see previous definition of 'TEXTURE_HEIGHT'
+  main.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\menu.h(11): warning C4005: 'TEXTURE_WIDTH': macro redefinition
+  c:\users\dylmr\desktop\gamecraft\gamecraft2019\brick.h(8): note: see previous definition of 'TEXTURE_WIDTH'
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\menu.h(12): warning C4005: 'TEXTURE_HEIGHT': macro redefinition
+  c:\users\dylmr\desktop\gamecraft\gamecraft2019\brick.h(9): note: see previous definition of 'TEXTURE_HEIGHT'
+  Generating Code...
 c:\users\dylmr\desktop\gamecraft\gamecraft2019\resource manager\imageresource.h(22): warning C4715: 'ImageResource::getTexture': not all control paths return a value
+c:\users\dylmr\desktop\gamecraft\gamecraft2019\resource manager\soundresource.h(22): warning C4715: 'SoundResource::getSound': not all control paths return a value
   Gamecraft2019.vcxproj -> C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\Debug\Gamecraft2019.exe
   C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libFLAC-8.dll
   C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libfreetype-6.dll

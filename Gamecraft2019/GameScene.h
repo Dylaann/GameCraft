@@ -7,6 +7,9 @@
 #include <vector>
 #include <SDL_ttf.h>
 #include "LeaderBoard/LeaderBoard.h"
+#include <queue>
+#include <mutex>
+#include <condition_variable>
 
 class GameScene : public Scene
 {
@@ -19,14 +22,30 @@ public:
 	bool getCheckGame() { return false; }
 
 	void draw(SDL_Renderer& renderer);
+
+	int produced = 0;
+	int consumed = 0;
+	std::mutex mx;
+	std::condition_variable cv;
+	std::deque<Brick*> m_q1;
+	std::deque<Brick*> m_q2;
+	std::deque<Brick*> m_q3;
+	bool used = false;
+
+	Brick * m_currentbrick = nullptr;
+	SDL_Texture * brickTexture;
+	int m_currentBrickLen = 3;
+
+	std::thread consumerThread;
+	std::thread producerThread;
+
+
 	//void handleInput(InputSystem& input);
 private:
 	BrickGen m_generator;
 
 	bool m_gameStarted, m_gameOver;
 
-	Brick * m_currentbrick;
-	SDL_Texture * brickTexture;
 	int m_songIndex;
 	int m_height = 0;
 	Grid * m_grid;
@@ -35,7 +54,6 @@ private:
 	Mix_Music* m_bgm2;
 	Mix_Chunk* m_click;
 	int m_stack = 1;
-	int m_currentBrickLen = 3;
 	int m_score = 0;
 	std::vector<Brick*> m_bricks;
 
@@ -46,4 +64,5 @@ private:
 	SDL_Color m_scoreCol = { 255, 255, 255, 255 };
 
 	LeaderBoard * m_leaderboard;
+	bool threadsMade = false;
 };

@@ -44,13 +44,15 @@ void GameScene::start()
 	m_gameStarted = true;
 
 	m_leaderboard = new LeaderBoard();
+
+	m_gameOver = false;
 }
 
 void GameScene::stop()
 {
-	delete m_bgm1;
-	delete m_bgm2;
-	delete m_click;
+	//delete m_bgm1;
+	//delete m_bgm2;
+	//delete m_click;
 }
 
 void GameScene::update()
@@ -114,6 +116,7 @@ void GameScene::update()
 			m_leaderboard->save(name, m_score);
 			m_gameOver = true;
 		}
+	
 
 		int k = rand() % 7;
 		m_currentbrick = new Brick(m_currentBrickLen, brickTexture, Vector2f(37.5 * k, 76));
@@ -121,6 +124,11 @@ void GameScene::update()
 	else {
 		for (int i = 0; i < m_currentbrick->getBlockSize(); i++) {
 		}
+	}
+
+	if (m_gameOver == true)
+	{
+		goToScene("Menu");
 	}
 
 }

@@ -16,6 +16,7 @@ public:
 	//void setupUi();
 	void stop();
 	void update();
+	bool getCheckGame() { return false; }
 
 	void draw(SDL_Renderer& renderer);
 	//void handleInput(InputSystem& input);

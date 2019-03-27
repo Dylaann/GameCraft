@@ -40,6 +40,7 @@ void Menu::start()
 	//m_font = TTF_OpenFont(path, 32);
 
 	//m_texture = new SDL_Texture("Start", "ASSETS/FONTS/arial.ttf", 16, {200, 0, 0});
+	m_stgt = "Menu";
 	
 }
 
@@ -79,7 +80,7 @@ void Menu::update()
 				}
 				if (flip2 == true)
 				{
-					
+					m_gameOver = true;
 				}
 			}
 			

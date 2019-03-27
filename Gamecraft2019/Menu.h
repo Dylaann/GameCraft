@@ -20,6 +20,7 @@ public:
 	void update();
 	void draw(SDL_Renderer& renderer);
 	void handleButtonPressed();
+	bool getCheckGame() { return m_gameOver; }
 private:
 	int m_currentIndex;
 	SDL_Rect  m_rect;
@@ -52,6 +53,7 @@ private:
 
 	std::string m_text;
 	bool selected = false;
+	bool m_gameOver = false;
 
 
 };

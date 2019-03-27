@@ -117,6 +117,10 @@ void Game::update()
 	//Update the menu manager
 	m_mManager.update();
 
+	if (m_mManager.getGameOver()) {
+		m_exitGame = true;
+	}
+
 }
 
 void Game::render()

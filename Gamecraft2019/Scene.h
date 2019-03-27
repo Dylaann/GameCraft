@@ -13,6 +13,7 @@ public:
 	virtual void start() = 0;
 	virtual void stop() = 0;
 	virtual void update() = 0;
+	virtual bool getCheckGame() = 0;
 	//virtual void handleInput(InputSystem& input) = 0;
 	virtual void draw(SDL_Renderer& renderer) = 0;
 	void goToScene(std::string sceneName)

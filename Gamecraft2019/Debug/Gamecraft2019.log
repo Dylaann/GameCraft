@@ -1,29 +1,48 @@
-﻿  Brick.cpp
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+﻿  Game.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
   c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
-c:\users\dylmr\desktop\gamecraft\gamecraft2019\brick.cpp(15): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\dylmr\desktop\gamecraft\gamecraft2019\brick.cpp(16): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\dylmr\desktop\gamecraft\gamecraft2019\brick.cpp(51): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\dylmr\desktop\gamecraft\gamecraft2019\brick.cpp(52): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-c:\users\dylmr\desktop\gamecraft\gamecraft2019\brick.cpp(60): warning C4305: '+=': truncation from 'double' to 'float'
-c:\users\dylmr\desktop\gamecraft\gamecraft2019\brick.cpp(64): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  Gamecraft2019.vcxproj -> C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\Debug\Gamecraft2019.exe
-  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libFLAC-8.dll
-  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libfreetype-6.dll
-  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libjpeg-9.dll
-  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libmodplug-1.dll
-  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libmpg123-0.dll
-  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libogg-0.dll
-  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libopus-0.dll
-  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libopusfile-0.dll
-  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libpng16-16.dll
-  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libtiff-5.dll
-  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libvorbis-0.dll
-  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libvorbisfile-3.dll
-  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\libwebp-7.dll
-  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\SDL2.dll
-  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\SDL2_image.dll
-  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\SDL2_mixer.dll
-  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\SDL2_ttf.dll
-  C:\Users\dylmr\Desktop\GameCraft\Gamecraft2019\\dlls\zlib1.dll
+c:\users\davem\desktop\gamecraft\gamecraft2019\menu.h(11): warning C4005: 'TEXTURE_WIDTH': macro redefinition
+  c:\users\davem\desktop\gamecraft\gamecraft2019\brick.h(8): note: see previous definition of 'TEXTURE_WIDTH'
+c:\users\davem\desktop\gamecraft\gamecraft2019\menu.h(12): warning C4005: 'TEXTURE_HEIGHT': macro redefinition
+  c:\users\davem\desktop\gamecraft\gamecraft2019\brick.h(9): note: see previous definition of 'TEXTURE_HEIGHT'
+  Menu.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+c:\users\davem\desktop\gamecraft\gamecraft2019\menu.cpp(11): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\davem\desktop\gamecraft\gamecraft2019\menu.cpp(12): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  MenuManager.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+c:\users\davem\desktop\gamecraft\gamecraft2019\menu.h(11): warning C4005: 'TEXTURE_WIDTH': macro redefinition
+  c:\users\davem\desktop\gamecraft\gamecraft2019\brick.h(8): note: see previous definition of 'TEXTURE_WIDTH'
+c:\users\davem\desktop\gamecraft\gamecraft2019\menu.h(12): warning C4005: 'TEXTURE_HEIGHT': macro redefinition
+  c:\users\davem\desktop\gamecraft\gamecraft2019\brick.h(9): note: see previous definition of 'TEXTURE_HEIGHT'
+  main.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_math_defines.h(22): warning C4005: 'M_PI': macro redefinition
+  c:\sdl2-2.0.8\include\sdl_stdinc.h(499): note: see previous definition of 'M_PI'
+c:\users\davem\desktop\gamecraft\gamecraft2019\menu.h(11): warning C4005: 'TEXTURE_WIDTH': macro redefinition
+  c:\users\davem\desktop\gamecraft\gamecraft2019\brick.h(8): note: see previous definition of 'TEXTURE_WIDTH'
+c:\users\davem\desktop\gamecraft\gamecraft2019\menu.h(12): warning C4005: 'TEXTURE_HEIGHT': macro redefinition
+  c:\users\davem\desktop\gamecraft\gamecraft2019\brick.h(9): note: see previous definition of 'TEXTURE_HEIGHT'
+  Generating Code...
+c:\users\davem\desktop\gamecraft\gamecraft2019\resource manager\imageresource.h(22): warning C4715: 'ImageResource::getTexture': not all control paths return a value
+  Gamecraft2019.vcxproj -> C:\Users\davem\Desktop\GameCraft\Gamecraft2019\Debug\Gamecraft2019.exe
+  C:\Users\davem\Desktop\GameCraft\Gamecraft2019\\dlls\libFLAC-8.dll
+  C:\Users\davem\Desktop\GameCraft\Gamecraft2019\\dlls\libfreetype-6.dll
+  C:\Users\davem\Desktop\GameCraft\Gamecraft2019\\dlls\libjpeg-9.dll
+  C:\Users\davem\Desktop\GameCraft\Gamecraft2019\\dlls\libmodplug-1.dll
+  C:\Users\davem\Desktop\GameCraft\Gamecraft2019\\dlls\libmpg123-0.dll
+  C:\Users\davem\Desktop\GameCraft\Gamecraft2019\\dlls\libogg-0.dll
+  C:\Users\davem\Desktop\GameCraft\Gamecraft2019\\dlls\libopus-0.dll
+  C:\Users\davem\Desktop\GameCraft\Gamecraft2019\\dlls\libopusfile-0.dll
+  C:\Users\davem\Desktop\GameCraft\Gamecraft2019\\dlls\libpng16-16.dll
+  C:\Users\davem\Desktop\GameCraft\Gamecraft2019\\dlls\libtiff-5.dll
+  C:\Users\davem\Desktop\GameCraft\Gamecraft2019\\dlls\libvorbis-0.dll
+  C:\Users\davem\Desktop\GameCraft\Gamecraft2019\\dlls\libvorbisfile-3.dll
+  C:\Users\davem\Desktop\GameCraft\Gamecraft2019\\dlls\libwebp-7.dll
+  C:\Users\davem\Desktop\GameCraft\Gamecraft2019\\dlls\SDL2.dll
+  C:\Users\davem\Desktop\GameCraft\Gamecraft2019\\dlls\SDL2_image.dll
+  C:\Users\davem\Desktop\GameCraft\Gamecraft2019\\dlls\SDL2_mixer.dll
+  C:\Users\davem\Desktop\GameCraft\Gamecraft2019\\dlls\SDL2_ttf.dll
+  C:\Users\davem\Desktop\GameCraft\Gamecraft2019\\dlls\zlib1.dll
   18 File(s) copied

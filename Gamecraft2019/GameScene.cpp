@@ -96,6 +96,9 @@ void GameScene::start()
 	m_message_rect.w = 200;
 	m_message_rect.h = 70;
 
+	m_BG1 = m_resources->getImageResource("BG1");
+	m_BG2 = m_resources->getImageResource("BG2");
+
 	m_grid = new Grid(m_resources);
 
 
@@ -120,6 +123,18 @@ void GameScene::start()
 	m_leaderboard = new LeaderBoard();
 
 	m_gameOver = false;
+	songChanged = false;
+	m_height = 0;
+
+	m_BG1rect.x = 0;
+	m_BG1rect.y = 0;
+	m_BG1rect.w = 375;
+	m_BG1rect.h = 667;
+
+	m_BG2rect.x = 0;
+	m_BG2rect.y = -667;
+	m_BG2rect.w = 375;
+	m_BG2rect.h = 667;
 }
 
 void GameScene::stop()
@@ -137,8 +152,9 @@ void GameScene::update()
 	m_currentbrick->update(m_stack, m_score);
 	//m_height++;
 	m_generator.genBricks();
-	if (m_height == 10)
+	if (m_height == 10 && !songChanged)
 	{
+		songChanged = true;
 		Mix_FadeOutMusic(500);
 		Mix_FadeInMusic(m_bgm2, -1, 250);
 	}
@@ -177,10 +193,15 @@ void GameScene::update()
 		if (m_stack <= 10) {
 			m_stack += 1;
 			m_score += 1;
+			m_height++;
+			Mix_PlayChannel(-1, m_click, 0);
 		}
 		else {
 			m_grid->moveTiles();
 			m_score += 1;
+			m_BG1rect.y += 33;
+			if (m_BG2rect.y < 0)
+				m_BG2rect.y += 33;
 		}
 
 		m_currentbrick->setBlockSize(m_currentbrick->getBlockSize() - m_grid->checkMiss());
@@ -215,6 +236,9 @@ void GameScene::update()
 void GameScene::draw(SDL_Renderer & renderer)
 {
 	//Draw here
+	SDL_RenderCopy(&renderer, m_BG1, NULL, &m_BG1rect);
+	SDL_RenderCopy(&renderer, m_BG2, NULL, &m_BG2rect);
+
 	SDL_DestroyTexture(m_message);
 	std::string temp = "Score: " + std::to_string(m_score);
 	surfaceMessage = TTF_RenderText_Blended(Arial, temp.c_str(), m_scoreCol);

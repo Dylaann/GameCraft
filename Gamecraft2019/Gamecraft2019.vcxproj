@@ -129,6 +129,7 @@
     <ClCompile Include="Grid\Grid.cpp" />
     <ClCompile Include="Grid\Tile.cpp" />
     <ClCompile Include="InputHandler.cpp" />
+    <ClCompile Include="LeaderBoard\LeaderBoard.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="GameScene.cpp" />
@@ -146,6 +147,7 @@
     <ClInclude Include="Grid\Grid.h" />
     <ClInclude Include="Grid\Tile.h" />
     <ClInclude Include="InputHandler.h" />
+    <ClInclude Include="LeaderBoard\LeaderBoard.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="MenuManager.h" />

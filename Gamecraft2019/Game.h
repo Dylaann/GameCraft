@@ -9,6 +9,7 @@
 #include "Resource Manager\ResourceManager.h"
 #include <vector>
 #include "MenuManager.h"
+#include "ThreadPool.h"
 
 using namespace std;
 
@@ -37,8 +38,7 @@ private:
 	TTF_Font* Arial;
 
 	MenuManager m_mManager;
-
+	ThreadPool m_threadPool;
 	ResourceManager * m_resourceManager;
-
 };
 #endif // !GAME_H

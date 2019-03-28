@@ -26,7 +26,7 @@ void MenuManager::update()
 			m_current->resetSceneChange();
 		}
 
-		m_current->update();
+		/*m_current->update();*/
 	}
 }
 

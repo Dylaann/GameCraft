@@ -1,7 +1,7 @@
 #ifndef BRICK_H
 #define BRICK_H
 
-#include "SDL.h"
+#include <SDL.h>
 #include "Vector2f.h"
 #include <vector>
 

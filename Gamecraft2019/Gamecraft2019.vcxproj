@@ -75,10 +75,10 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(SDL_SDK)/include;$(SDL_MIXER)/include;$(SDL_TTF)/include;$(SDL_IMAGE)/include</AdditionalIncludeDirectories>
-      <AdditionalIncludeDirectories>Json\;$(SDL2_SDK)/include;$(SDL_MIXER)/include;$(SDL_TTF)/include;$(SDL_IMAGE)/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Json\;$(SDL_SDK)/include;$(SDL_MIXER)/include;$(SDL_TTF)/include;$(SDL_IMAGE)/include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(SDL2_SDK)/lib/x86/;$(SDL_MIXER)/lib/x86/;$(SDL_TTF)/lib/x86/;$(SDL_IMAGE)/lib/x86/;</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SDL_SDK)/lib/x86/;$(SDL_MIXER)/lib/x86/;$(SDL_TTF)/lib/x86/;$(SDL_IMAGE)/lib/x86/;</AdditionalLibraryDirectories>
       <SubSystem>Console</SubSystem>
     </Link>
     <PostBuildEvent>

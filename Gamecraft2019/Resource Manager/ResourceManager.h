@@ -23,8 +23,6 @@ public:
 	ResourceManager(SDL_Renderer * renderer);
 	~ResourceManager();
 
-	void loadFromJson();
-
 	void addImageResource(ImageResource* resource, const std::string& name, const char * path);
 	void addSoundResource(SoundResource* resource, const std::string& name, const char * path);
 
@@ -37,6 +35,7 @@ public:
 	}
 
 	bool checkLoaded();
+	void setLoaded(bool load) { m_loaded = load; }
 
 private:
 	std::map<std::string, ImageResource*> m_imageResources;
@@ -46,5 +45,8 @@ private:
 
 	std::map<std::string, std::string> m_jsonImageFile;
 	std::map<std::string, std::string> m_jsonSoundFile;
+
+	std::thread m_thread;
+	bool m_loaded = false;
 };
 #endif 

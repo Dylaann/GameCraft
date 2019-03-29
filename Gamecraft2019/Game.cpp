@@ -59,6 +59,7 @@ void Game::run()
 	while (!m_exitGame) {
 
 		processEvents();
+
 		frameTime = SDL_GetTicks();
 
 		//deltaTime = frameTime - lastFrameTime;
@@ -67,8 +68,12 @@ void Game::run()
 		//handle input in the scenes when input is implemented
 		//m_mManager.handleInput(*input);
 
-		update();
-		render();
+		m_threadPool.addJob([this]() {
+			update();
+		});
+		m_threadPool.addJob([this]() {
+			render();
+		});
 
 		if ((SDL_GetTicks() - frameTime) < minimumFrameTime)
 			SDL_Delay(minimumFrameTime - (SDL_GetTicks() - frameTime));
@@ -81,35 +86,7 @@ void Game::run()
 
 void Game::processEvents()
 {
-	//SDL_Event event;
-	//while (SDL_PollEvent(&event)) {
-	//	switch (event.type) {
-	//	case SDL_QUIT:
-	//		break;
-	//	case SDL_KEYDOWN:
-	//		if (event.key.keysym.sym == SDLK_ESCAPE)
-	//			m_exitGame = true;
-
-	//		if (event.key.keysym.sym == SDLK_UP)
-	//			std::cout << "UP PRESSED" << std::endl;
-
-	//		if (event.key.keysym.sym == SDLK_DOWN)
-	//			std::cout << "DOWN PRESSED" << std::endl;
-
-	//		if (event.key.keysym.sym == SDLK_LEFT)
-	//			std::cout << "LEFT PRESSED" << std::endl;
-
-	//		if (event.key.keysym.sym == SDLK_RIGHT)
-	//			std::cout << "RIGHT PRESSED" << std::endl;
-	//			
-	//		if (event.key.keysym.sym == SDLK_SPACE)
-	//			std::cout << "SPACE PRESSED" << std::endl;
-
-	//		break;
-	//	default:
-	//		break;
-	//	}
-	//}
+	m_mManager.m_current->update();
 }
 
 void Game::update()
@@ -120,12 +97,10 @@ void Game::update()
 	if (m_mManager.getGameOver()) {
 		m_exitGame = true;
 	}
-
 }
 
 void Game::render()
 {
-
 	if (m_renderer == nullptr)
 	{
 		SDL_Log("Could not create a renderer: %s", SDL_GetError());

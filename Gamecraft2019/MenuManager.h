@@ -25,8 +25,9 @@ public:
 			return false;
 		}
 	}
-private:
 	Scene* m_current; //Ptr to the curretn scene
+private:
+	
 	ResourceManager* m_resources;
 	bool m_over = false;
 };

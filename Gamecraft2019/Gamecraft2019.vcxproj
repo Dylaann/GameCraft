@@ -75,7 +75,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(SDL_SDK)/include;$(SDL_MIXER)/include;$(SDL_TTF)/include;$(SDL_IMAGE)/include</AdditionalIncludeDirectories>
-      <AdditionalIncludeDirectories>Json\;$(SDL_SDK)/include;$(SDL_MIXER)/include;$(SDL_TTF)/include;$(SDL_IMAGE)/include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>Json\;$(SDL_SDK)/include;$(SDL_MIXER)/include;$(SDL_TTF)/include;$(SDL_IMAGE)/include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(SDL_SDK)/lib/x86/;$(SDL_MIXER)/lib/x86/;$(SDL_TTF)/lib/x86/;$(SDL_IMAGE)/lib/x86/;</AdditionalLibraryDirectories>
@@ -155,6 +155,7 @@
     <ClInclude Include="Resource Manager\ResourceManager.h" />
     <ClInclude Include="Resource Manager\SoundResource.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="ThreadPool.h" />
     <ClInclude Include="Vector2f.h" />
   </ItemGroup>
   <ItemGroup>

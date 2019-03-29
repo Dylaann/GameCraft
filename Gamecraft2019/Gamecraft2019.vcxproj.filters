@@ -51,6 +51,7 @@
     <ClInclude Include="Grid\Grid.h" />
     <ClInclude Include="BrickGen.h" />
     <ClInclude Include="LeaderBoard\LeaderBoard.h" />
+    <ClInclude Include="ThreadPool.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ASSETS\ImageAssetList.json" />
